@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: Derivation of \(H=-\sum p_i\log p_i\)</title>
+<link rel="next" href="ap-3.html" title="Theorems on Ergodic Sources" />
+<link rel="prev" href="ap-1.html" title="The Growth of the Number of Blocks of Symbols with a Finite State Condition" />
+<link rel="up" href="sect0012.html" title="The Discrete Channel with Noise" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class=" active current">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="ap:2">B Derivation of \(H=-\sum p_i\log p_i\)</h1>
+
+<p>Let \(\displaystyle H\Bigl(\frac1n,\frac1n,\dots ,\frac1n\Bigr)=A(n)\). From condition&#160;(<a href="sect0007.html#cond:3">3</a>) we can decompose a choice from \(s^m\) equally likely possibilities into a series of \(m\) choices from \(s\) equally likely possibilities and obtain </p>
+<div class="displaymath" id="a0000000131">
+  \[  A(s^m)=mA(s).  \]
+</div>
+<p> Similarly </p>
+<div class="displaymath" id="a0000000132">
+  \[  A(t^n)=nA(t).  \]
+</div>
+<p> We can choose \(n\) arbitrarily large and find an \(m\) to satisfy </p>
+<div class="displaymath" id="a0000000133">
+  \[  s^m\leq t^n{\lt}s^{(m+1)}.  \]
+</div>
+<p> Thus, taking logarithms and dividing by \(n\log s\), </p>
+<div class="displaymath" id="a0000000134">
+  \[  \frac mn \leq \frac{\log \,  t}{\log \,  s}\leq \frac mn + \frac1n \quad \text{or}\quad \Bigl|\frac mn - \frac{\log \,  t}{\log \,  s}\Bigr|{\lt}\epsilon  \]
+</div>
+<p> where \(\epsilon \) is arbitrarily small. Now from the monotonic property of \(A(n)\), </p>
+<div class="displaymath" id="a0000000135">
+  \begin{gather*}  A(s^m)\leq A(t^n)\leq A(s^{m+1})\\ m A(s)\leq n A(t) \leq (m+1) A(s). \end{gather*}
+</div>
+<p> Hence, dividing by \(n A(s)\), </p>
+<div class="displaymath" id="a0000000136">
+  \[  \frac mn \leq \frac{A(t)}{A(s)}\leq \frac mn + \frac1n \quad \text{or}\quad \Bigl|\frac mn - \frac{A(t)}{A(s)}\Bigr|{\lt}\epsilon  \]
+</div>
+<div class="displaymath" id="a0000000137">
+  \[  \Bigl|\frac{A(t)}{A(s)} - \frac{\log t}{\log s}\Bigr|{\lt}2\epsilon \qquad A(t)=K\log t  \]
+</div>
+<p> where \(K\) must be positive to satisfy&#160;(<a href="sect0007.html#cond:2">2</a>). </p>
+<p>Now suppose we have a choice from \(n\) possibilities with commeasurable probabilities \(\displaystyle p_i=\frac{n_i}{\sum n_i}\) where the \(n_i\) are integers. We can break down a choice from \(\sum n_i\) possibilities into a choice from \(n\) possibilities with probabilities \(p_1,\dots ,p_n\) and then, if the \(i\)th was chosen, a choice from \(n_i\) with equal probabilities. Using condition&#160;(<a href="sect0007.html#cond:3">3</a>) again, we equate the total choice from \(\sum n_i\) as computed by two methods </p>
+<div class="displaymath" id="a0000000138">
+  \[  K\log \sum n_i=H(p_1,\dots ,p_n)+K\sum p_i\log n_i.  \]
+</div>
+<p> Hence </p>
+<div class="displaymath" id="a0000000139">
+  \begin{align*}  H& =K\Bigl[\sum p_i\log \sum n_i-\sum p_i\log n_i\Bigr]\\ & =-K\sum p_i\log \frac{n_i}{\sum n_i}=-K\sum p_i\log p_i. \end{align*}
+</div>
+<p> If the \(p_i\) are incommeasurable, they may be approximated by rationals and the same expression must hold by our continuity assumption. Thus the expression holds in general. The choice of coefficient \(K\) is a matter of convenience and amounts to the choice of a unit of measure. </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="ap-1.html" title="The Growth of the Number of Blocks of Symbols with a Finite State Condition"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0012.html" title="The Discrete Channel with Noise"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="ap-3.html" title="Theorems on Ergodic Sources"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

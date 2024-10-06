@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: The Fundamental Theorem for a Noiseless Channel</title>
+<link rel="next" href="sect0011.html" title="Discussion and Examples" />
+<link rel="prev" href="sect0009.html" title="Representation of the Encoding and Decoding Operations" />
+<link rel="up" href="sect0002.html" title="Discrete Noiseless Systems" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class=" active">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000011">9 The Fundamental Theorem for a Noiseless Channel</h1>
+<p>We will now justify our interpretation of \(H\) as the rate of generating information by proving that \(H\) determines the channel capacity required with most efficient coding. </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:9">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">9</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> Let a source have entropy \(H\) \((\)bits per symbol\()\) and a channel have a capacity \(C\) \((\)bits per second\()\). Then it is possible to encode the output of the source in such a way as to transmit at the average rate \(\dfrac C H - \epsilon \) symbols per second over the channel where \(\epsilon \) is arbitrarily small. It is not possible to transmit at an average rate greater than \(\dfrac C H\). </p>
+
+  </div>
+</div>
+<p>The converse part of the theorem, that \(\dfrac C H\) cannot be exceeded, may be proved by noting that the entropy of the channel input per second is equal to that of the source, since the transmitter must be non-singular, and also this entropy cannot exceed the channel capacity. Hence \(H' \le C\) and the number of symbols per second \(= H'/H \le C/H\). </p>
+<p>The first part of the theorem will be proved in two different ways. The first method is to consider the set of all sequences of \(N\) symbols produced by the source. For \(N\) large we can divide these into two groups, one containing less than \(2^{(H+\eta )N}\) members and the second containing less than \(2^{RN}\) members (where \(R\) is the logarithm of the number of different symbols) and having a total probability less than \(\mu \). As \(N\) increases \(\eta \) and \(\mu \) approach zero. The number of signals of duration \(T\) in the channel is greater than \(2^{(C-\theta )T}\) with \(\theta \) small when \(T\) is large. if we choose </p>
+<div class="displaymath" id="a0000000073">
+  \[  T = \biggl( \frac HC + \lambda \biggr) N  \]
+</div>
+<p> then there will be a sufficient number of sequences of channel symbols for the high probability group when \(N\) and \(T\) are sufficiently large (however small \(\lambda \)) and also some additional ones. The high probability group is coded in an arbitrary one-to-one way into this set. The remaining sequences are represented by larger sequences, starting and ending with one of the sequences not used for the high probability group. This special sequence acts as a start and stop signal for a different code. In between a sufficient time is allowed to give enough different sequences for all the low probability messages. This will require </p>
+<div class="displaymath" id="a0000000074">
+  \[  T_1 = \biggl(\frac RC + \varphi \biggr) N  \]
+</div>
+<p> where \(\varphi \) is small. The mean rate of transmission in message symbols per second will then be greater than </p>
+<div class="displaymath" id="a0000000075">
+  \[  \biggl[(1-\delta ) \frac TN + \delta \frac{T_1}{N} \Biggr]^{-1} = \biggl[(1-\delta ) \Bigl(\frac HC + \lambda \Bigr) + \delta \Bigl(\frac RC + \varphi \Bigr) \biggr]^{-1}.  \]
+</div>
+<p> As \(N\) increases \(\delta \), \(\lambda \) and \(\varphi \) approach zero and the rate approaches \(\dfrac C H\). </p>
+<p>Another method of performing this coding and thereby proving the theorem can be described as follows: Arrange the messages of length \(N\) in order of decreasing probability and suppose their probabilities are \(p_1 \ge p_2 \ge p_3 \dots \ge p_n\). Let \(P_s = \sum _1^{s-1} p_i\); that is \(P_s\) is the cumulative probability up to, but not including, \(p_s\). We first encode into a binary system. The binary code for message \(s\) is obtained by expanding \(P_s\) as a binary number. The expansion is carried out to \(m_s\) places, where \(m_s\) is the integer satisfying: </p>
+<div class="displaymath" id="a0000000076">
+  \[  \log _2 \frac{1}{p_s} \le m_s {\lt} 1 + \log _2 \frac{1}{p_s}.  \]
+</div>
+<p> Thus the messages of high probability are represented by short codes and those of low probability by long codes. From these inequalities we have </p>
+<div class="displaymath" id="a0000000077">
+  \[  \frac{1}{2^{m_s}} \le p_s {\lt} \frac{1}{2^{m_s-1}}.  \]
+</div>
+<p> The code for \(P_s\) will differ from all succeeding ones in one or more of its \(m_s\) places, since all the remaining \(P_i\) are at least \(\frac{1}{2^{m_s}}\) larger and their binary expansions therefore differ in the first \(m_s\) places. Consequently all the codes are different and it is possible to recover the message from its code. If the channel sequences are not already sequences of binary digits, they can be ascribed binary numbers in an arbitrary fashion and the binary code thus translated into signals suitable for the channel. </p>
+<p>The average number \(H'\) of binary digits used per symbol of original message is easily estimated. We have </p>
+<div class="displaymath" id="a0000000078">
+  \[  H' = \frac1N \sum m_s p_s.  \]
+</div>
+<p> But, </p>
+<div class="displaymath" id="a0000000079">
+  \[  \frac1N \sum \Bigl( \log _2 \frac{1}{p_s} \Bigr) p_s \le \frac1N \sum m_s p_s {\lt} \frac1N \sum \Bigl( 1 + \log _2 \frac{1}{p_s} \Bigr) p_s  \]
+</div>
+<p> and therefore, </p>
+<div class="displaymath" id="a0000000080">
+  \[  G_N \le H' {\lt} G_N + \frac1N  \]
+</div>
+<p> As \(N\) increases \(G_N\) approaches \(H\), the entropy of the source and \(H'\) approaches \(H\). </p>
+<p>We see from this that the inefficiency in coding, when only a finite delay of \(N\) symbols is used, need not be greater than \(\frac1N\) plus the difference between the true entropy \(H\) and the entropy \(G_N\) calculated for sequences of length \(N\). The per cent excess time needed over the ideal is therefore less than </p>
+<div class="displaymath" id="a0000000081">
+  \[  \frac{G_N}{H} + \frac{1}{HN} - 1.  \]
+</div>
+<p>This method of encoding is substantially the same as one found independently by R. M. Fano.<a class="footnote" href="#a0000000082">
+  <sup class="footnotemark">1</sup>
+</a> His method is to arrange the messages of length \(N\) in order of decreasing probability. Divide this series into two groups of as nearly equal probability as possible. If the message is in the first group its first binary digit will be 0, otherwise 1. The groups are similarly divided into subsets of nearly equal probability and the particular subset determines the second binary digit. This process is continued until each subset contains only one message. It is easily seen that apart from minor differences (generally in the last digit) this amounts to the same thing as the arithmetic process described above. </p>
+
+</div> <!--main-text -->
+<footer id="footnotes">
+<ol>
+  <li id="a0000000082">Technical Report No.&#160;65, The Research Laboratory of Electronics, M.I.T., March 17, 1949.</li>
+</ol>
+</footer>
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0009.html" title="Representation of the Encoding and Decoding Operations"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0002.html" title="Discrete Noiseless Systems"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0011.html" title="Discussion and Examples"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

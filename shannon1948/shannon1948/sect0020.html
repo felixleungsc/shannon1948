@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: Mathematical Preliminaries</title>
+<link rel="next" href="sect0021.html" title="The Continuous Channel" />
+<link rel="prev" href="ap-4.html" title="Maximizing the Rate for a System of Constraints" />
+<link rel="up" href="index.html" title="A Mathematical Theory of Communication" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active current">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000021">3 Mathematical Preliminaries</h1>
+<p>In this final installment of the paper we consider the case where the signals or the messages or both are continuously variable, in contrast with the discrete nature assumed heretofore. To a considerable extent the continuous case can be obtained through a limiting process from the discrete case by dividing the continuum of messages and signals into a large but finite number of small regions and calculating the various parameters involved on a discrete basis. As the size of the regions is decreased these parameters in general approach as limits the proper values for the continuous case. There are, however, a few new effects that appear and also a general change of emphasis in the direction of specialization of the general results to particular cases. </p>
+<p>We will not attempt, in the continuous case, to obtain our results with the greatest generality, or with the extreme rigor of pure mathematics, since this would involve a great deal of abstract measure theory and would obscure the main thread of the analysis. A preliminary study, however, indicates that the theory can be formulated in a completely axiomatic and rigorous manner which includes both the continuous and discrete cases and many others. The occasional liberties taken with limiting processes in the present analysis can be justified in all cases of practical interest. </p>
+<p>Sets and Ensembles of Functions </p>
+<p>We shall have to deal in the continuous case with sets of functions and ensembles of functions. A set of functions, as the name implies, is merely a class or collection of functions, generally of one variable, time. It can be specified by giving an explicit representation of the various functions in the set, or implicitly by giving a property which functions in the set possess and others do not. Some examples are: </p>
+<ol class="enumerate">
+  <li><p>The set of functions: </p>
+<div class="displaymath" id="a0000000159">
+  \[  f_\theta (t)=\sin (t+\theta ).  \]
+</div>
+<p> Each particular value of \(\theta \) determines a particular function in the set. </p>
+</li>
+  <li><p>The set of all functions of time containing no frequencies over \(W\) cycles per second. </p>
+</li>
+  <li><p>The set of all functions limited in band to \(W\) and in amplitude to \(A\). </p>
+</li>
+  <li><p>The set of all English speech signals as functions of time. </p>
+</li>
+</ol>
+<p>An <em>ensemble</em> of functions is a set of functions together with a probability measure whereby we may determine the probability of a function in the set having certain properties.<a class="footnote" href="#a0000000160">
+  <sup class="footnotemark">1</sup>
+</a> For example with the set, </p>
+<div class="displaymath" id="a0000000161">
+  \[  f_\theta (t)=\sin (t+\theta ),  \]
+</div>
+<p> we may give a probability distribution for \(\theta \), \(P(\theta )\). The set then becomes an ensemble. </p>
+<p>Some further examples of ensembles of functions are: </p>
+<ol class="enumerate">
+  <li><p>A finite set of functions \(f_k(t)\) (\(k=1,2,\dots ,n\)) with the probability of \(f_k\) being \(p_k\). </p>
+</li>
+  <li><p>A finite dimensional family of functions </p>
+<div class="displaymath" id="a0000000162">
+  \[  f(\alpha _1,\alpha _2,\dots ,\alpha _n;t)  \]
+</div>
+<p> with a probability distribution on the parameters \(\alpha _i\): </p>
+<div class="displaymath" id="a0000000163">
+  \[  p(\alpha _1,\dots ,\alpha _n).  \]
+</div>
+<p> For example we could consider the ensemble defined by </p>
+<div class="displaymath" id="a0000000164">
+  \[  f(a_1,\dots ,a_n,\theta _1,\dots ,\theta _n;t) =\sum _{i=1}^n a_i\sin i(\omega t+\theta _i)  \]
+</div>
+<p> with the amplitudes \(a_i\) distributed normally and independently, and the phases \(\theta _i\) distributed uniformly (from \(0\) to \(2\pi \)) and independently. </p>
+</li>
+  <li><p> The ensemble </p>
+<div class="displaymath" id="a0000000165">
+  \[  f(a_i,t)=\sum _{n=-\infty }^{+\infty } a_n\frac{\sin \pi (2W t-n)}{\pi (2W t-n)}  \]
+</div>
+<p> with the \(a_i\) normal and independent all with the same standard deviation \(\sqrt N\). This is a representation of “white” noise, band limited to the band from \(0\) to \(W\) cycles per second and with average power \(N\).<a class="footnote" href="#a0000000166">
+  <sup class="footnotemark">2</sup>
+</a> </p>
+</li>
+  <li><p> Let points be distributed on the \(t\) axis according to a Poisson distribution. At each selected point the function \(f(t)\) is placed and the different functions added, giving the ensemble </p>
+<div class="displaymath" id="a0000000167">
+  \[  \sum _{k=-\infty }^\infty f(t+t_k)  \]
+</div>
+<p> where the \(t_k\) are the points of the Poisson distribution. This ensemble can be considered as a type of impulse or shot noise where all the impulses are identical. </p>
+</li>
+  <li><p> The set of English speech functions with the probability measure given by the frequency of occurrence in ordinary use. </p>
+</li>
+</ol>
+<p>An ensemble of functions \(f_\alpha (t)\) is <em>stationary</em> if the same ensemble results when all functions are shifted any fixed amount in time. The ensemble </p>
+<div class="displaymath" id="a0000000168">
+  \[  f_\theta (t)=\sin (t+\theta )  \]
+</div>
+<p> is stationary if \(\theta \) is distributed uniformly from \(0\) to \(2\pi \). If we shift each function by \(t_1\) we obtain </p>
+<div class="displaymath" id="a0000000169">
+  \begin{align*}  f_\theta (t+t_1)& =\sin (t+t_1+\theta )\\ & =\sin (t+\varphi ) \end{align*}
+</div>
+<p> with \(\varphi \) distributed uniformly from \(0\) to \(2\pi \). Each function has changed but the ensemble as a whole is invariant under the translation. The other examples given above are also stationary. </p>
+<p>An ensemble is <em>ergodic</em> if it is stationary, and there is no subset of the functions in the set with a probability different from 0 and 1 which is stationary. The ensemble </p>
+<div class="displaymath" id="a0000000170">
+  \[  \sin (t+\theta )  \]
+</div>
+<p> is ergodic. No subset of these functions of probability \(\neq 0,1\) is transformed into itself under all time translations. On the other hand the ensemble </p>
+<div class="displaymath" id="a0000000171">
+  \[  a\sin (t+\theta )  \]
+</div>
+<p> with \(a\) distributed normally and \(\theta \) uniform is stationary but not ergodic. The subset of these functions with \(a\) between 0 and 1 for example is stationary. </p>
+<p>Of the examples given, <a href="sect0020.html#it:18.3">3</a> and <a href="sect0020.html#it:18.4">4</a> are ergodic, and <a href="sect0020.html#it:18.5">5</a> may perhaps be considered so. If an ensemble is ergodic we may say roughly that each function in the set is typical of the ensemble. More precisely it is known that with an ergodic ensemble an average of any statistic over the ensemble is equal (with probability 1) to an average over the time translations of a particular function of the set.<a class="footnote" href="#a0000000172">
+  <sup class="footnotemark">3</sup>
+</a> Roughly speaking, each function can be expected, as time progresses, to go through, with the proper frequency, all the convolutions of any of the functions in the set. </p>
+<p>Just as we may perform various operations on numbers or functions to obtain new numbers or functions, we can perform operations on ensembles to obtain new ensembles. Suppose, for example, we have an ensemble of functions \(f_\alpha (t)\) and an operator \(T\) which gives for each function \(f_\alpha (t)\) a resulting function \(g_\alpha (t)\): </p>
+<div class="displaymath" id="a0000000173">
+  \[  g_\alpha (t)=Tf_\alpha (t).  \]
+</div>
+<p> Probability measure is defined for the set \(g_\alpha (t)\) by means of that for the set \(f_\alpha (t)\). The probability of a certain subset of the \(g_\alpha (t)\) functions is equal to that of the subset of the \(f_\alpha (t)\) functions which produce members of the given subset of \(g\) functions under the operation \(T\). Physically this corresponds to passing the ensemble through some device, for example, a filter, a rectifier or a modulator. The output functions of the device form the ensemble \(g_\alpha (t)\). </p>
+<p>A device or operator \(T\) will be called invariant if shifting the input merely shifts the output, i.e., if </p>
+<div class="displaymath" id="a0000000174">
+  \[  g_\alpha (t)=Tf_\alpha (t)  \]
+</div>
+<p> implies </p>
+<div class="displaymath" id="a0000000175">
+  \[  g_\alpha (t+t_1)=Tf_\alpha (t+t_1)  \]
+</div>
+<p> for all \(f_\alpha (t)\) and all \(t_1\). It is easily shown (see Appendix&#160;<a href="sect0022.html#ap:7">23</a> that if \(T\) is invariant and the input ensemble is stationary then the output ensemble is stationary. Likewise if the input is ergodic the output will also be ergodic. </p>
+<p>A filter or a rectifier is invariant under all time translations. The operation of modulation is not since the carrier phase gives a certain time structure. However, modulation is invariant under all translations which are multiples of the period of the carrier. </p>
+<p>Wiener has pointed out the intimate relation between the invariance of physical devices under time translations and Fourier theory.<a class="footnote" href="#a0000000176">
+  <sup class="footnotemark">4</sup>
+</a> He has shown, in fact, that if a device is linear as well as invariant Fourier analysis is then the appropriate mathematical tool for dealing with the problem. </p>
+<p>An ensemble of functions is the appropriate mathematical representation of the messages produced by a continuous source (for example, speech), of the signals produced by a transmitter, and of the perturbing noise. Communication theory is properly concerned, as has been emphasized by Wiener, not with operations on particular functions, but with operations on ensembles of functions. A communication system is designed not for a particular speech function and still less for a sine wave, but for the ensemble of speech functions. </p>
+<p>Band Limited Ensembles of Functions </p>
+<p>If a function of time \(f(t)\) is limited to the band from \(0\) to \(W\) cycles per second it is completely determined by giving its ordinates at a series of discrete points spaced \(\frac1{2W}\) seconds apart in the manner indicated by the following result.<a class="footnote" href="#a0000000177">
+  <sup class="footnotemark">5</sup>
+</a> </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:13">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">13</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> Let \(f(t)\) contain no frequencies over \(W\). Then </p>
+<div class="displaymath" id="a0000000178">
+  \[  f(t)=\sum _{-\infty }^\infty X_n\frac{\sin \pi (2Wt-n)}{\pi (2Wt-n)}  \]
+</div>
+<p> where </p>
+<div class="displaymath" id="a0000000179">
+  \[  X_n=f\Bigl(\frac{n}{2W}\Bigr).  \]
+</div>
+
+  </div>
+</div>
+<p>In this expansion \(f(t)\) is represented as a sum of orthogonal functions. The coefficients \(X_n\) of the various terms can be considered as coordinates in an infinite dimensional “function space.” In this space each function corresponds to precisely one point and each point to one function. </p>
+<p>A function can be considered to be substantially limited to a time \(T\) if all the ordinates \(X_n\) outside this interval of time are zero. In this case all but \(2T W\) of the coordinates will be zero. Thus functions limited to a band \(W\) and duration \(T\) correspond to points in a space of \(2T W\) dimensions. </p>
+<p>A subset of the functions of band \(W\) and duration \(T\) corresponds to a region in this space. For example, the functions whose total energy is less than or equal to \(E\) correspond to points in a \(2T W\) dimensional sphere with radius \(r=\sqrt{2W E}\). </p>
+<p>An <em>ensemble</em> of functions of limited duration and band will be represented by a probability distribution \(p(x_1,\dots ,x_n)\) in the corresponding \(n\) dimensional space. If the ensemble is not limited in time we can consider the \(2T W\) coordinates in a given interval \(T\) to represent substantially the part of the function in the interval \(T\) and the probability distribution \(p(x_1,\dots ,x_n)\) to give the statistical structure of the ensemble for intervals of that duration. </p>
+<p>Entropy of a Continuous Distribution </p>
+<p>The entropy of a discrete set of probabilities \(p_1,\dots ,p_n\) has been defined as: </p>
+<div class="displaymath" id="a0000000180">
+  \[  H=-\sum p_i\log p_i.  \]
+</div>
+<p> In an analogous manner we define the entropy of a continuous distribution with the density distribution function \(p(x)\) by: </p>
+<div class="displaymath" id="a0000000181">
+  \[  H=-\int _{-\infty }^\infty p(x)\log p(x)\, dx.  \]
+</div>
+<p> With an \(n\) dimensional distribution \(p(x_1,\dots ,x_n)\) we have </p>
+<div class="displaymath" id="a0000000182">
+  \[  H=-\int \dots \int p(x_1,\dots ,x_n)\log p(x_1,\dots ,x_n)\,  dx_1\dotsm dx_n.  \]
+</div>
+<p> If we have two arguments \(x\) and \(y\) (which may themselves be multidimensional) the joint and conditional entropies of \(p(x,y)\) are given by </p>
+<div class="displaymath" id="a0000000183">
+  \begin{align*}  H(x,y)& =-\iint p(x,y)\log p(x,y)\, dx\, dy\\ \intertext {and} H_x(y)& =-\iint p(x,y)\log \frac{p(x,y)}{p(x)}\, dx\, dy\\ H_y(x)& =-\iint p(x,y)\log \frac{p(x,y)}{p(y)}\, dx\, dy \end{align*}
+</div>
+<p> where </p>
+<div class="displaymath" id="a0000000184">
+  \begin{align*}  p(x)& =\int p(x,y)\, dy\\ p(y)& =\int p(x,y)\, dx. \end{align*}
+</div>
+<p>The entropies of continuous distributions have most (but not all) of the properties of the discrete case. In particular we have the following: </p>
+<ol class="enumerate">
+  <li><p>If \(x\) is limited to a certain volume \(v\) in its space, then \(H(x)\) is a maximum and equal to \(\log v\) when \(p(x)\) is constant (\(1/v\)) in the volume. </p>
+</li>
+  <li><p>With any two variables \(x\), \(y\) we have </p>
+<div class="displaymath" id="a0000000185">
+  \[  H(x,y)\leq H(x)+H(y)  \]
+</div>
+<p> with equality if (and only if) \(x\) and \(y\) are independent, i.e., \(p(x,y)=p(x)p(y)\) (apart possibly from a set of points of probability zero). </p>
+</li>
+  <li><p>Consider a generalized averaging operation of the following type: </p>
+<div class="displaymath" id="a0000000186">
+  \[  p'(y)=\int a(x,y)p(x)\, dx  \]
+</div>
+<p> with </p>
+<div class="displaymath" id="a0000000187">
+  \[  \int a(x,y)\, dx=\int a(x,y)\, dy=1,\qquad \qquad a(x,y)\geq 0.  \]
+</div>
+<p> Then the entropy of the averaged distribution \(p'(y)\) is equal to or greater than that of the original distribution \(p(x)\). </p>
+</li>
+  <li><p>We have </p>
+<div class="displaymath" id="a0000000188">
+  \begin{gather*}  H(x,y)=H(x)+H_x(y)=H(y)+H_y(x)\\ \intertext {and} H_x(y)\leq H(y). \end{gather*}
+</div>
+</li>
+  <li><p>Let \(p(x)\) be a one-dimensional distribution. The form of \(p(x)\) giving a maximum entropy subject to the condition that the standard deviation of \(x\) be fixed at \(\sigma \) is Gaussian. To show this we must maximize </p>
+<div class="displaymath" id="a0000000189">
+  \[  H(x)=-\int p(x)\log p(x)\, dx  \]
+</div>
+<p> with </p>
+<div class="displaymath" id="a0000000190">
+  \[  \sigma ^2=\int p(x)x^2\, dx\quad \text{and}\quad 1=\int p(x)\, dx  \]
+</div>
+<p> as constraints. This requires, by the calculus of variations, maximizing </p>
+<div class="displaymath" id="a0000000191">
+  \[  \int \bigl[-p(x)\log p(x)+\lambda p(x)x^2+\mu p(x)\bigr]\, dx.  \]
+</div>
+<p> The condition for this is </p>
+<div class="displaymath" id="a0000000192">
+  \[  -1-\log p(x)+\lambda x^2+\mu =0  \]
+</div>
+<p> and consequently (adjusting the constants to satisfy the constraints) </p>
+<div class="displaymath" id="a0000000193">
+  \[  p(x)=\frac{1}{\sqrt{2\pi }\sigma } e^{-(x^2/2\sigma ^2)}.  \]
+</div>
+<p> Similarly in \(n\) dimensions, suppose the second order moments of \(p(x_1,\dots ,x_n)\) are fixed at \(A_{ij}\): </p>
+<div class="displaymath" id="a0000000194">
+  \[  A_{ij}=\int \dots \int x_i x_j p(x_1,\dots ,x_n)\, dx_1\dotsm \,  dx_n.  \]
+</div>
+<p> Then the maximum entropy occurs (by a similar calculation) when \(p(x_1,\dots ,x_n)\) is the \(n\) dimensional Gaussian distribution with the second order moments \(A_{ij}\). </p>
+</li>
+  <li><p>The entropy of a one-dimensional Gaussian distribution whose standard deviation is \(\sigma \) is given by </p>
+<div class="displaymath" id="a0000000195">
+  \[  H(x)=\log \sqrt{2\pi e}\sigma .  \]
+</div>
+<p> This is calculated as follows: </p>
+<div class="displaymath" id="a0000000196">
+  \begin{align*}  p(x)& =\frac{1}{\sqrt{2\pi }\sigma }e^{-(x^2/2\sigma ^2)}\\ -\log p(x)& =\log \sqrt{2\pi }\sigma +\frac{x^2}{2\sigma ^2}\\ H(x)& =-\int p(x)\log p(x)\, dx\\ & =\int p(x)\log \sqrt{2\pi }\sigma \, dx +\int p(x)\frac{x^2}{2\sigma ^2}\, dx\\ & =\log \sqrt{2\pi }\sigma +\frac{\sigma ^2}{2\sigma ^2}\\ & =\log \sqrt{2\pi }\sigma +\log \sqrt{e}\\ & =\log \sqrt{2\pi e}\sigma . \end{align*}
+</div>
+<p> Similarly the \(n\) dimensional Gaussian distribution with associated quadratic form \(a_{ij}\) is given by </p>
+<div class="displaymath" id="a0000000197">
+  \[  p(x_1,\dots ,x_n)=\frac{|a_{ij}|^{\frac12}}{(2\pi )^{n/2}} \exp \Bigl(-\tfrac 12\sum a_{ij} x_i x_j\Bigr)  \]
+</div>
+<p> and the entropy can be calculated as </p>
+<div class="displaymath" id="a0000000198">
+  \[  H=\log (2\pi e)^{n/2}|a_{ij}|^{-\frac12}  \]
+</div>
+<p> where \(|a_{ij}|\) is the determinant whose elements are \(a_{ij}\). </p>
+</li>
+  <li><p>If \(x\) is limited to a half line (\(p(x)=0\) for \(x\leq 0\)) and the first moment of \(x\) is fixed at \(a\): </p>
+<div class="displaymath" id="a0000000199">
+  \[  a=\int _0^\infty p(x)x\, dx,  \]
+</div>
+<p> then the maximum entropy occurs when </p>
+<div class="displaymath" id="a0000000200">
+  \[  p(x)=\frac1a e^{-(x/a)}  \]
+</div>
+<p> and is equal to \(\log ea\). </p>
+</li>
+  <li><p>There is one important difference between the continuous and discrete entropies. In the discrete case the entropy measures in an <em>absolute</em> way the randomness of the chance variable. In the continuous case the measurement is <em>relative to the coordinate system</em>. If we change coordinates the entropy will in general change. In fact if we change to coordinates \(y_1\dotsm y_n\) the new entropy is given by </p>
+<div class="displaymath" id="a0000000201">
+  \[  H(y)=\int \dots \int p(x_1,\dots ,x_n)J\Bigl(\frac xy\Bigr) \log p(x_1,\dots ,x_n)J\Bigl(\frac xy\Bigr)\, dy_1\dotsm dy_n  \]
+</div>
+<p> where \(J\bigl(\frac xy\bigr)\) is the Jacobian of the coordinate transformation. On expanding the logarithm and changing the variables to \(x_1\dotsm x_n\), we obtain: </p>
+<div class="displaymath" id="a0000000202">
+  \[  H(y)=H(x)-\int \dots \int p(x_1,\dots ,x_n)\log J\Bigl(\frac xy\Bigr)\,  dx_1\dots dx_n.  \]
+</div>
+<p> Thus the new entropy is the old entropy less the expected logarithm of the Jacobian. In the continuous case the entropy can be considered a measure of randomness <em>relative to an assumed standard</em>, namely the coordinate system chosen with each small volume element \(dx_1\dotsm dx_n\) given equal weight. When we change the coordinate system the entropy in the new system measures the randomness when equal volume elements \(dy_1\dotsm dy_n\) in the new system are given equal weight. </p>
+<p>In spite of this dependence on the coordinate system the entropy concept is as important in the continuous case as the discrete case. This is due to the fact that the derived concepts of information rate and channel capacity depend on the <em>difference</em> of two entropies and this difference <em>does not</em> depend on the coordinate frame, each of the two terms being changed by the same amount. </p>
+<p>The entropy of a continuous distribution can be negative. The scale of measurements sets an arbitrary zero corresponding to a uniform distribution over a unit volume. A distribution which is more confined than this has less entropy and will be negative. The rates and capacities will, however, always be non-negative. </p>
+</li>
+  <li><p>A particular case of changing coordinates is the linear transformation </p>
+<div class="displaymath" id="a0000000203">
+  \[  y_j=\sum _ia_{ij}x_i.  \]
+</div>
+<p> In this case the Jacobian is simply the determinant \(|a_{ij}|^{-1}\) and </p>
+<div class="displaymath" id="a0000000204">
+  \[  H(y)=H(x)+\log |a_{ij}|.  \]
+</div>
+<p> In the case of a rotation of coordinates (or any measure preserving transformation) \(J=1\) and \(H(y)=H(x)\). </p>
+</li>
+</ol>
+<p>Entropy of an Ensemble of Functions </p>
+<p>Consider an ergodic ensemble of functions limited to a certain band of width \(W\) cycles per second. Let </p>
+<div class="displaymath" id="a0000000205">
+  \[  p(x_1,\dots , x_n)  \]
+</div>
+<p> be the density distribution function for amplitudes \(x_1,\dots ,x_n\) at \(n\) successive sample points. We define the entropy of the ensemble per degree of freedom by </p>
+<div class="displaymath" id="a0000000206">
+  \[  H'=-\qopname \relax \@empty {Lim}_{n\to \infty }\frac1n\int \dots \int p(x_1,\dots , x_n) \log p(x_1,\dots , x_n)\, dx_1\dots dx_n.  \]
+</div>
+<p> We may also define an entropy \(H\) per second by dividing, not by \(n\), but by the time \(T\) in seconds for \(n\) samples. Since \(n=2T W\), \(H=2W H'\). </p>
+<p>With white thermal noise \(p\) is Gaussian and we have </p>
+<div class="displaymath" id="a0000000207">
+  \begin{align*}  H’& =\log \sqrt{2\pi e N},\\ H& =W\log 2\pi e N. \end{align*}
+</div>
+<p>For a given average power \(N\), white noise has the maximum possible entropy. This follows from the maximizing properties of the Gaussian distribution noted above. </p>
+<p>The entropy for a continuous stochastic process has many properties analogous to that for discrete processes. In the discrete case the entropy was related to the logarithm of the <em>probability</em> of long sequences, and to the <em>number</em> of reasonably probable sequences of long length. In the continuous case it is related in a similar fashion to the logarithm of the <em>probability density</em> for a long series of samples, and the <em>volume</em> of reasonably high probability in the function space. </p>
+<p>More precisely, if we assume \(p(x_1,\dots ,x_n)\) continuous in all the \(x_i\) for all \(n\), then for sufficiently large \(n\) </p>
+<div class="displaymath" id="a0000000208">
+  \[  \Bigl|\frac{\log p}{n}-H'\Bigr|{\lt}\epsilon  \]
+</div>
+<p> for all choices of \((x_1,\dots ,x_n)\) apart from a set whose total probability is less than \(\delta \), with \(\delta \) and \(\epsilon \) arbitrarily small. This follows form the ergodic property if we divide the space into a large number of small cells. </p>
+<p>The relation of \(H\) to volume can be stated as follows: Under the same assumptions consider the \(n\) dimensional space corresponding to \(p(x_1,\dots ,x_n)\). Let \(V_n(q)\) be the smallest volume in this space which includes in its interior a total probability \(q\). Then </p>
+<div class="displaymath" id="a0000000209">
+  \[  \qopname \relax \@empty {Lim}_{n\to \infty }\frac{\log V_n(q)}{n}=H'  \]
+</div>
+<p> provided \(q\) does not equal 0 or 1. </p>
+<p>These results show that for large \(n\) there is a rather well-defined volume (at least in the logarithmic sense) of high probability, and that within this volume the probability density is relatively uniform (again in the logarithmic sense). </p>
+<p>In the white noise case the distribution function is given by </p>
+<div class="displaymath" id="a0000000210">
+  \[  p(x_1,\dots ,x_n)=\frac{1}{(2\pi N)^{n/2}}\exp -\frac{1}{2N}\sum x_i^2.  \]
+</div>
+<p> Since this depends only on \(\sum x_i^2\) the surfaces of equal probability density are spheres and the entire distribution has spherical symmetry. The region of high probability is a sphere of radius \(\sqrt{n N}\). As \(n\to \infty \) the probability of being outside a sphere of radius \(\sqrt{n(N+\epsilon )}\) approaches zero and \(\frac1n\) times the logarithm of the volume of the sphere approaches \(\log \sqrt{2\pi e N}\). </p>
+<p>In the continuous case it is convenient to work not with the entropy \(H\) of an ensemble but with a derived quantity which we will call the entropy power. This is defined as the power in a white noise limited to the same band as the original ensemble and having the same entropy. In other words if \(H'\) is the entropy of an ensemble its entropy power is </p>
+<div class="displaymath" id="a0000000211">
+  \[  N_1=\frac{1}{2\pi e}\exp 2H'.  \]
+</div>
+<p> In the geometrical picture this amounts to measuring the high probability volume by the squared radius of a sphere having the same volume. Since white noise has the maximum entropy for a given power, the entropy power of any noise is less than or equal to its actual power. </p>
+<p>Entropy Loss in Linear Filters </p>
+<div class="table"  id="a0000000212">
+   <figcaption>
+  <span class="caption_title">TABLE</span> 
+  <span class="caption_ref">I</span> 
+  <span class="caption_text"></span> 
+</figcaption>  <small class="footnotesize"><div class="centered"><table class="tabular">
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> <i class="sc">entropy </i></p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> <i class="sc">entropy </i></p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+  </tr>
+  <tr>
+    <td  style="text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> <i class="sc">gain </i></p>
+
+    </td>
+    <td  style="text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> <i class="sc">power </i></p>
+
+    </td>
+    <td  style="text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> <i class="sc">power gain </i></p>
+
+    </td>
+    <td  style="text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> <i class="sc">impulse response</i></p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> <i class="sc">factor </i></p>
+
+    </td>
+    <td  style="text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> <i class="sc">in decibels </i></p>
+
+    </td>
+    <td  style="text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">&nbsp;</td>
+  </tr>
+</table></div> </small>
+</div>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:14">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">14</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> If an ensemble having an entropy \(H_1\) per degree of freedom in band \(W\) is passed through a filter with characteristic \(Y(f)\) the output ensemble has an entropy </p>
+<div class="displaymath" id="a0000000213">
+  \[  H_2=H_1+\frac1W\int _W \log |Y(f)|^2\, df.  \]
+</div>
+
+  </div>
+</div>
+<p>The operation of the filter is essentially a linear transformation of coordinates. If we think of the different frequency components as the original coordinate system, the new frequency components are merely the old ones multiplied by factors. The coordinate transformation matrix is thus essentially diagonalized in terms of these coordinates. The Jacobian of the transformation is (for \(n\) sine and \(n\) cosine components) </p>
+<div class="displaymath" id="a0000000214">
+  \[  J=\prod _{i=1}^n|Y(f_i)|^2  \]
+</div>
+<p> where the \(f_i\) are equally spaced through the band \(W\). This becomes in the limit </p>
+<div class="displaymath" id="a0000000215">
+  \[  \exp \frac1W\int _W\log |Y(f)|^2\, df.  \]
+</div>
+<p> Since \(J\) is constant its average value is the same quantity and applying the theorem on the change of entropy with a change of coordinates, the result follows. We may also phrase it in terms of the entropy power. Thus if the entropy power of the first ensemble is \(N_1\) that of the second is </p>
+<div class="displaymath" id="a0000000216">
+  \[  N_1\exp \frac1W\int _W\log |Y(f)|^2\, df.  \]
+</div>
+<p> The final entropy power is the initial entropy power multiplied by the geometric mean gain of the filter. If the gain is measured in <i class="it">db</i>, then the output entropy power will be increased by the arithmetic mean <i class="it">db</i> gain over \(W\). </p>
+<p>In Table&#160;<a href="sect0020.html#tab:1">I</a> the entropy power loss has been calculated (and also expressed in <i class="it">db</i>) for a number of ideal gain characteristics. The impulsive responses of these filters are also given for \(W=2\pi \), with phase assumed to be \(0\). </p>
+<p>The entropy loss for many other cases can be obtained from these results. For example the entropy power factor \(1/e^2\) for the first case also applies to any gain characteristic obtain from \(1-\omega \) by a measure preserving transformation of the \(\omega \) axis. In particular a linearly increasing gain \(G(\omega )=\omega \), or a “saw tooth” characteristic between 0 and 1 have the same entropy loss. The reciprocal gain has the reciprocal factor. Thus \(1/\omega \) has the factor \(e^2\). Raising the gain to any power raises the factor to this power. </p>
+<p>Entropy of a Sum of Two Ensembles </p>
+<p>If we have two ensembles of functions \(f_\alpha (t)\) and \(g_\beta (t)\) we can form a new ensemble by “addition.” Suppose the first ensemble has the probability density function \(p(x_1,\dots ,x_n)\) and the second \(q(x_1,\dots ,x_n)\). Then the density function for the sum is given by the convolution: </p>
+<div class="displaymath" id="a0000000217">
+  \[  r(x_1,\dots ,x_n)=\int \dots \int p(y_1,\dots ,y_n) q(x_1-y_1,\dots ,x_n-y_n)\, dy_1\dotsm dy_n.  \]
+</div>
+<p> Physically this corresponds to adding the noises or signals represented by the original ensembles of functions. </p>
+<p>The following result is derived in Appendix&#160;<a href="sect0022.html#ap:7">23</a>. </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:15">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">15</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> Let the average power of two ensembles be \(N_1\) and \(N_2\) and let their entropy powers be \(\overline N_1\) and \(\overline N_2\). Then the entropy power of the sum, \(\overline N_3\), is bounded by </p>
+<div class="displaymath" id="a0000000218">
+  \[  \overline N_1+\overline N_2\leq \overline N_3\leq N_1+N_2.  \]
+</div>
+
+  </div>
+</div>
+<p>White Gaussian noise has the peculiar property that it can absorb any other noise or signal ensemble which may be added to it with a resultant entropy power approximately equal to the sum of the white noise power and the signal power (measured from the average signal value, which is normally zero), provided the signal power is small, in a certain sense, compared to noise. </p>
+<p>Consider the function space associated with these ensembles having \(n\) dimensions. The white noise corresponds to the spherical Gaussian distribution in this space. The signal ensemble corresponds to another probability distribution, not necessarily Gaussian or spherical. Let the second moments of this distribution about its center of gravity be \(a_{ij}\). That is, if \(p(x_1,\dots ,x_n)\) is the density distribution function </p>
+<div class="displaymath" id="a0000000219">
+  \[  a_{ij}=\int \dots \int p(x_i-\alpha _i)(x_j-\alpha _j)\, dx_1\dotsm dx_n  \]
+</div>
+<p> where the \(\alpha _i\) are the coordinates of the center of gravity. Now \(a_{ij}\) is a positive definite quadratic form, and we can rotate our coordinate system to align it with the principal directions of this form. \(a_{ij}\) is then reduced to diagonal form \(b_{ii}\). We require that each \(b_{ii}\) be small compared to \(N\), the squared radius of the spherical distribution. </p>
+<p>In this case the convolution of the noise and signal produce approximately a Gaussian distribution whose corresponding quadratic form is </p>
+<div class="displaymath" id="a0000000220">
+  \[  N+b_{ii}.  \]
+</div>
+<p> The entropy power of this distribution is </p>
+<div class="displaymath" id="a0000000221">
+  \[  \Bigl[\prod (N+b_{ii})\Bigr]^{1/n}  \]
+</div>
+<p> or approximately </p>
+<div class="displaymath" id="a0000000222">
+  \begin{gather*}  =\Bigl[(N)^n+\sum b_{ii}(N)^{n-1}\Bigr]^{1/n}\\ \doteq N+\frac1n\sum b_{ii}. \end{gather*}
+</div>
+<p> The last term is the signal power, while the first is the noise power. </p>
+
+</div> <!--main-text -->
+<footer id="footnotes">
+<ol>
+  <li id="a0000000160">In mathematical terminology the functions belong to a measure space whose total measure is unity.</li>
+  <li id="a0000000166">This representation can be used as a definition of band limited white noise. It has certain advantages in that it involves fewer limiting operations than do definitions that have been used in the past. The name “white noise,” already firmly entrenched in the literature, is perhaps somewhat unfortunate. In optics white light means either any continuous spectrum as contrasted with a point spectrum, or a spectrum which is flat with <em>wavelength</em> (which is not the same as a spectrum flat with frequency).</li>
+  <li id="a0000000172">This is the famous ergodic theorem or rather one aspect of this theorem which was proved in somewhat different formulations by Birkoff, von Neumann, and Koopman, and subsequently generalized by Wiener, Hopf, Hurewicz and others. The literature on ergodic theory is quite extensive and the reader is referred to the papers of these writers for precise and general formulations; e.g., E.&#160;Hopf, “Ergodentheorie,” <i class="it">Ergebnisse der Mathematik und ihrer Grenzgebiete,</i> v.&#160;5; “On Causality Statistics and Probability,” <i class="it">Journal of Mathematics and Physics,</i> v.&#160;XIII, No.&#160;1, 1934; N.&#160;Wiener, “The Ergodic Theorem,” <i class="it">Duke Mathematical Journal,</i> v.&#160;5, 1939.</li>
+  <li id="a0000000176">Communication theory is heavily indebted to Wiener for much of its basic philosophy and theory. His classic NDRC report, <i class="it">The Interpolation, Extrapolation and Smoothing of Stationary Time Series</i> (Wiley, 1949), contains the first clear-cut formulation of communication theory as a statistical problem, the study of operations on time series. This work, although chiefly concerned with the linear prediction and filtering problem, is an important collateral reference in connection with the present paper. We may also refer here to Wiener’s <i class="it">Cybernetics</i> (Wiley, 1948), dealing with the general problems of communication and control.</li>
+  <li id="a0000000177">For a proof of this theorem and further discussion see the author’s paper “Communication in the Presence of Noise” published in the <i class="it">Proceedings of the Institute of Radio Engineers,</i> v.&#160;37, No.&#160;1, Jan., 1949, pp.&#160;10–21.</li>
+</ol>
+</footer>
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="ap-4.html" title="Maximizing the Rate for a System of Constraints"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="A Mathematical Theory of Communication"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0021.html" title="The Continuous Channel"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

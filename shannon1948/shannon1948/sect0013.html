@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: Representation of a Noisy Discrete Channel</title>
+<link rel="next" href="sect0014.html" title="Equivocation and Channel Capacity" />
+<link rel="prev" href="sect0012.html" title="The Discrete Channel with Noise" />
+<link rel="up" href="sect0012.html" title="The Discrete Channel with Noise" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class=" active current">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000014">11 Representation of a Noisy Discrete Channel</h1>
+<p> We now consider the case where the signal is perturbed by noise during transmission or at one or the other of the terminals. This means that the received signal is not necessarily the same as that sent out by the transmitter. Two cases may be distinguished. If a particular transmitted signal always produces the same received signal, i.e., the received signal is a definite function of the transmitted signal, then the effect may be called distortion. If this function has an inverse — no two transmitted signals producing the same received signal — distortion may be corrected, at least in principle, by merely performing the inverse functional operation on the received signal. </p>
+<p>The case of interest here is that in which the signal does not always undergo the same change in transmission. In this case we may assume the received signal \(E\) to be a function of the transmitted signal \(S\) and a second variable, the noise \(N\). </p>
+<div class="displaymath" id="a0000000089">
+  \[  E = f(S,N)  \]
+</div>
+<p> The noise is considered to be a chance variable just as the message was above. In general it may be represented by a suitable stochastic process. The most general type of noisy discrete channel we shall consider is a generalization of the finite state noise-free channel described previously. We assume a finite number of states and a set of probabilities </p>
+<div class="displaymath" id="a0000000090">
+  \[  p_{\alpha ,i}(\beta ,j).  \]
+</div>
+<p> This is the probability, if the channel is in state \(\alpha \) and symbol \(i\) is transmitted, that symbol \(j\) will be received and the channel left in state \(\beta \). Thus \(\alpha \) and \(\beta \) range over the possible states, \(i\) over the possible transmitted signals and \(j\) over the possible received signals. In the case where successive symbols are independently perturbed by the noise there is only one state, and the channel is described by the set of transition probabilities \(p_i(j)\), the probability of transmitted symbol \(i\) being received as \(j\). </p>
+<p>If a noisy channel is fed by a source there are two statistical processes at work: the source and the noise. Thus there are a number of entropies that can be calculated. First there is the entropy \(H(x)\) of the source or of the input to the channel (these will be equal if the transmitter is non-singular). The entropy of the output of the channel, i.e., the received signal, will be denoted by \(H(y)\). In the noiseless case \(H(y) = H(x)\). The joint entropy of input and output will be \(H(xy)\). Finally there are two conditional entropies \(H_x(y)\) and \(H_y(x)\), the entropy of the output when the input is known and conversely. Among these quantities we have the relations </p>
+<div class="displaymath" id="a0000000091">
+  \[  H(x,y) = H(x) + H_x(y) = H(y) + H_y(x).  \]
+</div>
+<p> All of these entropies can be measured on a per-second or a per-symbol basis. </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0012.html" title="The Discrete Channel with Noise"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0012.html" title="The Discrete Channel with Noise"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0014.html" title="Equivocation and Channel Capacity"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

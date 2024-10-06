@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: Equivocation and Channel Capacity</title>
+<link rel="next" href="sect0015.html" title="The Fundamental Theorem for a Discrete Channel with Noise" />
+<link rel="prev" href="sect0013.html" title="Representation of a Noisy Discrete Channel" />
+<link rel="up" href="sect0012.html" title="The Discrete Channel with Noise" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000015">12 Equivocation and Channel Capacity</h1>
+<p> If the channel is noisy it is not in general possible to reconstruct the original message or the transmitted signal with <em>certainty</em> by any operation on the received signal \(E\). There are, however, ways of transmitting the information which are optimal in combating noise. This is the problem which we now consider. </p>
+<p>Suppose there are two possible symbols 0 and 1, and we are transmitting at a rate of 1000 symbols per second with probabilities \(p_0 = p_1 = \frac12\). Thus our source is producing information at the rate of 1000 bits per second. During transmission the noise introduces errors so that, on the average, 1 in 100 is received incorrectly (a 0 as 1, or 1 as 0). What is the rate of transmission of information? Certainly less than 1000 bits per second since about 1% of the received symbols are incorrect. Our first impulse might be to say the rate is 990 bits per second, merely subtracting the expected number of errors. This is not satisfactory since it fails to take into account the recipient’s lack of knowledge of where the errors occur. We may carry it to an extreme case and suppose the noise so great that the received symbols are entirely independent of the transmitted symbols. The probability of receiving 1 is \(\frac12\) whatever was transmitted and similarly for 0. Then about half of the received symbols are correct due to chance alone, and we would be giving the system credit for transmitting 500 bits per second while actually no information is being transmitted at all. Equally “good” transmission would be obtained by dispensing with the channel entirely and flipping a coin at the receiving point. </p>
+<p>Evidently the proper correction to apply to the amount of information transmitted is the amount of this information which is missing in the received signal, or alternatively the uncertainty when we have received a signal of what was actually sent. From our previous discussion of entropy as a measure of uncertainty it seems reasonable to use the conditional entropy of the message, knowing the received signal, as a measure of this missing information. This is indeed the proper definition, as we shall see later. Following this idea the rate of actual transmission, \(R\), would be obtained by subtracting from the rate of production (i.e., the entropy of the source) the average rate of conditional entropy. </p>
+<div class="displaymath" id="a0000000092">
+  \[  R = H(x) - H_y(x)  \]
+</div>
+<p>The conditional entropy \(H_y(x)\) will, for convenience, be called the equivocation. It measures the average ambiguity of the received signal. </p>
+<p>In the example considered above, if a 0 is received the <em>a posteriori</em> probability that a 0 was transmitted is .99, and that a 1 was transmitted is .01. These figures are reversed if a 1 is received. Hence </p>
+<div class="displaymath" id="a0000000093">
+  \begin{align*}  H_y(x) & = - [.99 \log .99 + 0.01 \log 0.01 ] \\ & = .081\;  \text{bits/symbol} \end{align*}
+</div>
+<p> or 81 bits per second. We may say that the system is transmitting at a rate \(1000 - 81 = 919\) bits per second. In the extreme case where a 0 is equally likely to be received as a 0 or 1 and similarly for 1, the <em>a posteriori</em> probabilities are \(\frac12\), \(\frac12\) and </p>
+<div class="displaymath" id="a0000000094">
+  \begin{align*}  H_y(x) & = - \bigl[\tfrac 12\log \tfrac 12+\tfrac 12\log \tfrac 12\bigr] \\ & = 1 \; \text{bit per symbol} \end{align*}
+</div>
+<p> or 1000 bits per second. The rate of transmission is then 0 as it should be. </p>
+<p>The following theorem gives a direct intuitive interpretation of the equivocation and also serves to justify it as the unique appropriate measure. We consider a communication system and an observer (or auxiliary device) who can see both what is sent and what is recovered (with errors due to noise). This observer notes the errors in the recovered message and transmits data to the receiving point over a “correction channel” to enable the receiver to correct the errors. The situation is indicated schematically in Fig.&#160;<a href="sect0014.html#fig:8">8</a>. </p>
+<figure id="fig:8">
+  <p> <div class="centered"></div> </p>
+<figcaption>
+  <span class="caption_title">Fig.</span> 
+  <span class="caption_ref">8</span> 
+  <span class="caption_text">Schematic diagram of a correction system.</span> 
+</figcaption>
+
+
+</figure>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:10">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">10</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> If the correction channel has a capacity equal to \(H_y(x)\) it is possible to so encode the correction data as to send it over this channel and correct all but an arbitrarily small fraction \(\epsilon \) of the errors. This is not possible if the channel capacity is less than \(H_y(x)\). </p>
+
+  </div>
+</div>
+<p>Roughly then, \(H_y(x)\) is the amount of additional information that must be supplied per second at the receiving point to correct the received message. </p>
+<p>To prove the first part, consider long sequences of received message \(M'\) and corresponding original message \(M\). There will be logarithmically \(T H_y(x)\) of the \(M\)’s which could reasonably have produced each \(M'\). Thus we have \(T H_y(x)\) binary digits to send each \(T\) seconds. This can be done with \(\epsilon \) frequency of errors on a channel of capacity \(H_y(x)\). </p>
+<p>The second part can be proved by noting, first, that for any discrete chance variables \(x\), \(y\), \(z\) </p>
+<div class="displaymath" id="a0000000095">
+  \[  H_y(x,z) \ge H_y(x).  \]
+</div>
+<p> The left-hand side can be expanded to give </p>
+<div class="displaymath" id="a0000000096">
+  \begin{gather*}  H_y(z) + H_{yz}(x) \ge H_y(x) \\ H_{yz}(x) \ge H_y(x) - H_y(z) \ge H_y(x) - H(z). \end{gather*}
+</div>
+<p> If we identify \(x\) as the output of the source, \(y\) as the received signal and \(z\) as the signal sent over the correction channel, then the right-hand side is the equivocation less the rate of transmission over the correction channel. If the capacity of this channel is less than the equivocation the right-hand side will be greater than zero and \(H_{yz}(x){\gt}0\). But this is the uncertainty of what was sent, knowing both the received signal and the correction signal. If this is greater than zero the frequency of errors cannot be arbitrarily small. </p>
+<p><i class="itshape">Example:</i> </p>
+<blockquote class="quote"> Suppose the errors occur at random in a sequence of binary digits: probability \(p\) that a digit is wrong and \(q=1-p\) that it is right. These errors can be corrected if their position is known. Thus the correction channel need only send information as to these positions. This amounts to transmitting from a source which produces binary digits with probability \(p\) for 1 (incorrect) and \(q\) for 0 (correct). This requires a channel of capacity <div class="displaymath" id="a0000000097">
+  \[  - [p \log p + q \log q ]  \]
+</div> which is the equivocation of the original system. </blockquote>
+<p>The rate of transmission \(R\) can be written in two other forms due to the identities noted above. We have </p>
+<div class="displaymath" id="a0000000098">
+  \begin{align*}  R & = H(x) - H_y(x) \\ & = H(y) - H_x(y) \\ & = H(x) + H(y) - H(x,y) . \end{align*}
+</div>
+<p> The first defining expression has already been interpreted as the amount of information sent less the uncertainty of what was sent. The second measures the amount received less the part of this which is due to noise. The third is the sum of the two amounts less the joint entropy and therefore in a sense is the number of bits per second common to the two. Thus all three expressions have a certain intuitive significance. </p>
+<p>The capacity \(C\) of a noisy channel should be the maximum possible rate of transmission, i.e., the rate when the source is properly matched to the channel. We therefore define the channel capacity by </p>
+<div class="displaymath" id="a0000000099">
+  \[  C= \qopname \relax \@empty {Max}\bigl(H(x) - H_y(x)\bigr)  \]
+</div>
+<p> where the maximum is with respect to all possible information sources used as input to the channel. If the channel is noiseless, \(H_y(x) = 0\). The definition is then equivalent to that already given for a noiseless channel since the maximum entropy for the channel is its capacity. </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0013.html" title="Representation of a Noisy Discrete Channel"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0012.html" title="The Discrete Channel with Noise"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0015.html" title="The Fundamental Theorem for a Discrete Channel with Noise"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

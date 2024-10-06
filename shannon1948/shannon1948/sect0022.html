@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: The Rate for a Continuous Source</title>
+<link rel="prev" href="sect0021.html" title="The Continuous Channel" />
+<link rel="up" href="index.html" title="A Mathematical Theory of Communication" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000023">5 The Rate for a Continuous Source</h1>
+<p> Fidelity Evaluation Functions </p>
+<p>In the case of a discrete source of information we were able to determine a definite rate of generating information, namely the entropy of the underlying stochastic process. With a continuous source the situation is considerably more involved. In the first place a continuously variable quantity can assume an infinite number of values and requires, therefore, an infinite number of binary digits for exact specification. This means that to transmit the output of a continuous source with <em>exact recovery</em> at the receiving point requires, in general, a channel of infinite capacity (in bits per second). Since, ordinarily, channels have a certain amount of noise, and therefore a finite capacity, exact transmission is impossible. </p>
+<p>This, however, evades the real issue. Practically, we are not interested in exact transmission when we have a continuous source, but only in transmission to within a certain tolerance. The question is, can we assign a definite rate to a continuous source when we require only a certain fidelity of recovery, measured in a suitable way. Of course, as the fidelity requirements are increased the rate will increase. It will be shown that we can, in very general cases, define such a rate, having the property that it is possible, by properly encoding the information, to transmit it over a channel whose capacity is equal to the rate in question, and satisfy the fidelity requirements. A channel of smaller capacity is insufficient. </p>
+<p>It is first necessary to give a general mathematical formulation of the idea of fidelity of transmission. Consider the set of messages of a long duration, say \(T\) seconds. The source is described by giving the probability density, in the associated space, that the source will select the message in question \(P(x)\). A given communication system is described (from the external point of view) by giving the conditional probability \(P_x(y)\) that if message \(x\) is produced by the source the recovered message at the receiving point will be \(y\). The system as a whole (including source and transmission system) is described by the probability function \(P(x,y)\) of having message \(x\) and final output \(y\). If this function is known, the complete characteristics of the system from the point of view of fidelity are known. Any evaluation of fidelity must correspond mathematically to an operation applied to \(P(x,y)\). This operation must at least have the properties of a simple ordering of systems; i.e., it must be possible to say of two systems represented by \(P_1(x,y)\) and \(P_2(x,y)\) that, according to our fidelity criterion, either (1)&#160;the first has higher fidelity, (2)&#160;the second has higher fidelity, or (3)&#160;they have equal fidelity. This means that a criterion of fidelity can be represented by a numerically valued function: </p>
+<div class="displaymath" id="a0000000271">
+  \[  v\bigl(P(x,y)\bigr)  \]
+</div>
+<p> whose argument ranges over possible probability functions \(P(x,y)\). </p>
+<p>We will now show that under very general and reasonable assumptions the function \(v\bigl(P(x,y)\bigr)\) can be written in a seemingly much more specialized form, namely as an average of a function \(\rho (x,y)\) over the set of possible values of \(x\) and \(y\): </p>
+<div class="displaymath" id="a0000000272">
+  \[  v\bigl(P(x,y)\bigr)=\iint P(x,y)\rho (x,y)\, dx\, dy.  \]
+</div>
+<p> To obtain this we need only assume (1)&#160;that the source and system are ergodic so that a very long sample will be, with probability nearly 1, typical of the ensemble, and (2)&#160;that the evaluation is “reasonable” in the sense that it is possible, by observing a typical input and output \(x_1\) and \(y_1\), to form a tentative evaluation on the basis of these samples; and if these samples are increased in duration the tentative evaluation will, with probability 1, approach the exact evaluation based on a full knowledge of \(P(x,y)\). Let the tentative evaluation be \(\rho (x,y)\). Then the function \(\rho (x,y)\) approaches (as \(T\to \infty \)) a constant for almost all \((x,y)\) which are in the high probability region corresponding to the system: </p>
+<div class="displaymath" id="a0000000273">
+  \[  \rho (x,y)\to v\bigl(P(x,y)\bigr)  \]
+</div>
+<p> and we may also write </p>
+<div class="displaymath" id="a0000000274">
+  \[  \rho (x,y)\to \iint P(x,y)\rho (x,y)\, dx\, dy  \]
+</div>
+<p> since </p>
+<div class="displaymath" id="a0000000275">
+  \[  \iint P(x,y)\, dx\, dy=1.  \]
+</div>
+<p> This establishes the desired result. </p>
+<p>The function \(\rho (x,y)\) has the general nature of a “distance” between \(x\) and \(y\).<a class="footnote" href="#a0000000276">
+  <sup class="footnotemark">1</sup>
+</a> It measures how undesirable it is (according to our fidelity criterion) to receive \(y\) when \(x\) is transmitted. The general result given above can be restated as follows: Any reasonable evaluation can be represented as an average of a distance function over the set of messages and recovered messages \(x\) and \(y\) weighted according to the probability \(P(x,y)\) of getting the pair in question, provided the duration \(T\) of the messages be taken sufficiently large. </p>
+<p>The following are simple examples of evaluation functions: </p>
+<ol class="enumerate">
+  <li><p>R.M.S. criterion. </p>
+<div class="displaymath" id="a0000000277">
+  \[  v=\overline{\bigl(x(t)-y(t)\bigr)^2}.  \]
+</div>
+<p> In this very commonly used measure of fidelity the distance function \(\rho (x,y)\) is (apart from a constant factor) the square of the ordinary Euclidean distance between the points \(x\) and \(y\) in the associated function space. </p>
+<div class="displaymath" id="a0000000278">
+  \[  \rho (x,y)=\frac1T\int _0^T\bigl[x(t)-y(t)\bigr]^2\, dt.  \]
+</div>
+</li>
+  <li><p>Frequency weighted R.M.S. criterion. More generally one can apply different weights to the different frequency components before using an R.M.S. measure of fidelity. This is equivalent to passing the difference \(x(t)-y(t)\) through a shaping filter and then determining the average power in the output. Thus let </p>
+<div class="displaymath" id="a0000000279">
+  \[  e(t)=x(t)-y(t)  \]
+</div>
+<p> and </p>
+<div class="displaymath" id="a0000000280">
+  \[  f(t)=\int _{-\infty }^\infty e(\tau )k(t-\tau )\, d\tau  \]
+</div>
+<p> then </p>
+<div class="displaymath" id="a0000000281">
+  \[  \rho (x,y)=\frac1T\int _0^Tf(t)^2\, dt.  \]
+</div>
+</li>
+  <li><p>Absolute error criterion. </p>
+<div class="displaymath" id="a0000000282">
+  \[  \rho (x,y)=\frac1T\int _0^T\bigl|x(t)-y(t)\bigr|\, dt.  \]
+</div>
+</li>
+  <li><p>The structure of the ear and brain determine implicitly an evaluation, or rather a number of evaluations, appropriate in the case of speech or music transmission. There is, for example, an “intelligibility” criterion in which \(\rho (x,y)\) is equal to the relative frequency of incorrectly interpreted words when message \(x(t)\) is received as \(y(t)\). Although we cannot give an explicit representation of \(\rho (x,y)\) in these cases it could, in principle, be determined by sufficient experimentation. Some of its properties follow from well-known experimental results in hearing, e.g., the ear is relatively insensitive to phase and the sensitivity to amplitude and frequency is roughly logarithmic. </p>
+</li>
+  <li><p>The discrete case can be considered as a specialization in which we have tacitly assumed an evaluation based on the frequency of errors. The function \(\rho (x,y)\) is then defined as the number of symbols in the sequence \(y\) differing from the corresponding symbols in \(x\) divided by the total number of symbols in \(x\). </p>
+</li>
+</ol>
+<p>The Rate for a Source Relative to a Fidelity Evaluation </p>
+<p>We are now in a position to define a rate of generating information for a continuous source. We are given \(P(x)\) for the source and an evaluation \(v\) determined by a distance function \(\rho (x,y)\) which will be assumed continuous in both \(x\) and \(y\). With a particular system \(P(x,y)\) the quality is measured by </p>
+<div class="displaymath" id="a0000000283">
+  \[  v=\iint \rho (x,y)P(x,y)\, dx\, dy.  \]
+</div>
+<p> Furthermore the rate of flow of binary digits corresponding to \(P(x,y)\) is </p>
+<div class="displaymath" id="a0000000284">
+  \[  R=\iint P(x,y)\log \frac{P(x,y)}{P(x)P(y)}\, dx\, dy.  \]
+</div>
+<p> We define the rate \(R_1\) of generating information for a given quality \(v_1\) of reproduction to be the minimum of \(R\) when we keep \(v\) fixed at \(v_1\) and vary \(P_x(y)\). That is: </p>
+<div class="displaymath" id="a0000000285">
+  \[  R_1=\qopname \relax \@empty {Min}_{P_x(y)}\iint P(x,y)\log \frac{P(x,y)}{P(x)P(y)}\, dx\, dy  \]
+</div>
+<p> subject to the constraint: </p>
+<div class="displaymath" id="a0000000286">
+  \[  v_1=\iint P(x,y)\rho (x,y)\, dx\, dy.  \]
+</div>
+<p>This means that we consider, in effect, all the communication systems that might be used and that transmit with the required fidelity. The rate of transmission in bits per second is calculated for each one and we choose that having the least rate. This latter rate is the rate we assign the source for the fidelity in question. </p>
+<p>The justification of this definition lies in the following result: </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:21">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">21</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> If a source has a rate \(R_1\) for a valuation \(v_1\) it is possible to encode the output of the source and transmit it over a channel of capacity \(C\) with fidelity as near \(v_1\) as desired provided \(R_1\leq C\). This is not possible if \(R_1{\gt}C\). </p>
+
+  </div>
+</div>
+<p>The last statement in the theorem follows immediately from the definition of \(R_1\) and previous results. If it were not true we could transmit more than \(C\) bits per second over a channel of capacity \(C\). The first part of the theorem is proved by a method analogous to that used for Theorem&#160;<a href="sect0015.html#thm:11">11</a>. We may, in the first place, divide the \((x,y)\) space into a large number of small cells and represent the situation as a discrete case. This will not change the evaluation function by more than an arbitrarily small amount (when the cells are very small) because of the continuity assumed for \(\rho (x,y)\). Suppose that \(P_1(x,y)\) is the particular system which minimizes the rate and gives \(R_1\). We choose from the high probability \(y\)’s a set at random containing </p>
+<div class="displaymath" id="a0000000287">
+  \[  2^{(R_1+\epsilon )T}  \]
+</div>
+<p> members where \(\epsilon \to 0\) as \(T\to \infty \). With large \(T\) each chosen point will be connected by a high probability line (as in Fig.&#160;<a href="sect0015.html#fig:10">10</a>) to a set of \(x\)’s. A calculation similar to that used in proving Theorem&#160;<a href="sect0015.html#thm:11">11</a> shows that with large \(T\) almost all \(x\)’s are covered by the fans from the chosen \(y\) points for almost all choices of the \(y\)’s. The communication system to be used operates as follows: The selected points are assigned binary numbers. When a message \(x\) is originated it will (with probability approaching 1 as \(T\to \infty \)) lie within at least one of the fans. The corresponding binary number is transmitted (or one of them chosen arbitrarily if there are several) over the channel by suitable coding means to give a small probability of error. Since \(R_1\leq C\) this is possible. At the receiving point the corresponding \(y\) is reconstructed and used as the recovered message. </p>
+<p>The evaluation \(v_1'\) for this system can be made arbitrarily close to \(v_1\) by taking \(T\) sufficiently large. This is due to the fact that for each long sample of message \(x(t)\) and recovered message \(y(t)\) the evaluation approaches \(v_1\) (with probability 1). </p>
+<p>It is interesting to note that, in this system, the noise in the recovered message is actually produced by a kind of general quantizing at the transmitter and not produced by the noise in the channel. It is more or less analogous to the quantizing noise in PCM. </p>
+<p>The Calculation of Rates </p>
+<p>The definition of the rate is similar in many respects to the definition of channel capacity. In the former </p>
+<div class="displaymath" id="a0000000288">
+  \[  R=\qopname \relax \@empty {Min}_{P_x(y)} \iint P(x,y)\log \frac{P(x,y)}{P(x)P(y)}\, dx\, dy  \]
+</div>
+<p> with \(P(x)\) and \(\displaystyle v_1=\iint P(x,y)\rho (x,y)\, dx\, dy\) fixed. In the latter </p>
+<div class="displaymath" id="a0000000289">
+  \[  C=\qopname \relax \@empty {Max}_{P(x)} \iint P(x,y)\log \frac{P(x,y)}{P(x)P(y)}\, dx\, dy  \]
+</div>
+<p> with \(P_x(y)\) fixed and possibly one or more other constraints (e.g., an average power limitation) of the form \(K=\iint P(x,y)\lambda (x,y)\, dx\, dy\). </p>
+<p>A partial solution of the general maximizing problem for determining the rate of a source can be given. Using Lagrange’s method we consider </p>
+<div class="displaymath" id="a0000000290">
+  \[  \iint \biggl[P(x,y)\log \frac{P(x,y)}{P(x)P(y)} +\mu P(x,y)\rho (x,y)+\nu (x)P(x,y)\biggr]\, dx\, dy.  \]
+</div>
+<p> The variational equation (when we take the first variation on \(P(x,y)\)) leads to </p>
+<div class="displaymath" id="a0000000291">
+  \[  P_y(x)=B(x)e^{-\lambda \rho (x,y)}  \]
+</div>
+<p> where \(\lambda \) is determined to give the required fidelity and \(B(x)\) is chosen to satisfy </p>
+<div class="displaymath" id="a0000000292">
+  \[  \int B(x)e^{-\lambda \rho (x,y)}\, dx=1.  \]
+</div>
+<p>This shows that, with best encoding, the conditional probability of a certain cause for various received \(y\), \(P_y(x)\) will decline exponentially with the distance function \(\rho (x,y)\) between the \(x\) and \(y\) in question. </p>
+<p>In the special case where the distance function \(\rho (x,y)\) depends only on the (vector) difference between \(x\) and \(y\), </p>
+<div class="displaymath" id="a0000000293">
+  \[  \rho (x,y)=\rho (x-y)  \]
+</div>
+<p> we have </p>
+<div class="displaymath" id="a0000000294">
+  \[  \int B(x)e^{-\lambda \rho (x-y)}\, dx=1.  \]
+</div>
+<p> Hence \(B(x)\) is constant, say \(\alpha \), and </p>
+<div class="displaymath" id="a0000000295">
+  \[  P_y(x)=\alpha e^{-\lambda \rho (x-y)}.  \]
+</div>
+<p> Unfortunately these formal solutions are difficult to evaluate in particular cases and seem to be of little value. In fact, the actual calculation of rates has been carried out in only a few very simple cases. </p>
+<p>If the distance function \(\rho (x,y)\) is the mean square discrepancy between \(x\) and \(y\) and the message ensemble is white noise, the rate can be determined. In that case we have </p>
+<div class="displaymath" id="a0000000296">
+  \[  R=\qopname \relax \@empty {Min}\bigl[H(x)-H_y(x)\bigr]=H(x)-\qopname \relax \@empty {Max}H_y(x)  \]
+</div>
+<p> with \(N=\overline{(x-y)^2}\). But the \(\qopname \relax \@empty {Max}H_y(x)\) occurs when \(y-x\) is a white noise, and is equal to \(W_1\log 2\pi e N\) where \(W_1\) is the bandwidth of the message ensemble. Therefore </p>
+<div class="displaymath" id="a0000000297">
+  \begin{align*}  R& =W_1\log 2\pi e Q - W_1\log 2\pi e N\\ & =W_1\log \frac{Q}{N} \end{align*}
+</div>
+<p> where \(Q\) is the average message power. This proves the following: </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="a0000000298">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">22</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>The rate for a white noise source of power \(Q\) and band \(W_1\) relative to an R.M.S. measure of fidelity is </p>
+<div class="displaymath" id="a0000000299">
+  \[  R=W_1\log \frac{Q}{N}  \]
+</div>
+<p> where \(N\) is the allowed mean square error between original and recovered messages. </p>
+
+  </div>
+</div>
+<p>More generally with any message source we can obtain inequalities bounding the rate relative to a mean square error criterion. </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="ap:7">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">23</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>The rate for any source of band \(W_1\) is bounded by </p>
+<div class="displaymath" id="a0000000300">
+  \[  W_1\log \frac{Q_1}{N}\leq R\leq W_1\log \frac{Q}{N}  \]
+</div>
+<p> where \(Q\) is the average power of the source, \(Q_1\) its entropy power and \(N\) the allowed mean square error. </p>
+
+  </div>
+</div>
+<p>The lower bound follows from the fact that the \(\qopname \relax \@empty {Max}H_y(x)\) for a given \(\overline{(x-y)^2}=N\) occurs in the white noise case. The upper bound results if we place points (used in the proof of Theorem&#160;<a href="sect0022.html#thm:21">21</a>) not in the best way but at random in a sphere of radius \(\sqrt{Q-N}\). </p>
+<p> *Acknowledgments The writer is indebted to his colleagues at the Laboratories, particularly to Dr.&#160;H.&#160;W. Bode, Dr.&#160;J.&#160;R.&#160;Pierce, Dr.&#160;B.&#160;McMillan, and Dr.&#160;B.&#160;M.&#160;Oliver for many helpful suggestions and criticisms during the course of this work. Credit should also be given to Professor N.&#160;Wiener, whose elegant solution of the problems of filtering and prediction of stationary ensembles has considerably influenced the writer’s thinking in this field. </p>
+
+<p>Let \(S_1\) be any measurable subset of the \(g\) ensemble, and \(S_2\) the subset of the \(f\) ensemble which gives \(S_1\) under the operation \(T\). Then </p>
+<div class="displaymath" id="a0000000301">
+  \[  S_1=TS_2.  \]
+</div>
+<p> Let \(H^\lambda \) be the operator which shifts all functions in a set by the time \(\lambda \). Then </p>
+<div class="displaymath" id="a0000000302">
+  \[  H^\lambda S_1=H^\lambda TS_2=TH^\lambda S_2  \]
+</div>
+<p> since \(T\) is invariant and therefore commutes with \(H^\lambda \). Hence if \(m[S]\) is the probability measure of the set \(S\) </p>
+<div class="displaymath" id="a0000000303">
+  \begin{align*}  m[H^\lambda S_1]& =m[TH^\lambda S_2]=m[H^\lambda S_2]\\ & =m[S_2]=m[S_1] \end{align*}
+</div>
+<p> where the second equality is by definition of measure in the \(g\) space, the third since the \(f\) ensemble is stationary, and the last by definition of \(g\) measure again. </p>
+<p>To prove that the ergodic property is preserved under invariant operations, let \(S_1\) be a subset of the \(g\) ensemble which is invariant under \(H^\lambda \), and let \(S_2\) be the set of all functions \(f\) which transform into \(S_1\). Then </p>
+<div class="displaymath" id="a0000000304">
+  \[  H^\lambda S_1=H^\lambda TS_2=TH^\lambda S_2=S_1  \]
+</div>
+<p> so that \(H^\lambda S_2\) is included in \(S_2\) for all \(\lambda \). Now, since </p>
+<div class="displaymath" id="a0000000305">
+  \[  m[H^\lambda S_2]=m[S_1]  \]
+</div>
+<p> this implies </p>
+<div class="displaymath" id="a0000000306">
+  \[  H^\lambda S_2=S_2  \]
+</div>
+<p> for all \(\lambda \) with \(m[S_2]\neq 0,1\). This contradiction shows that \(S_1\) does not exist. </p>
+
+<p>The upper bound, \(\overline N_3\leq N_1+N_2\), is due to the fact that the maximum possible entropy for a power \(N_1+N_2\) occurs when we have a white noise of this power. In this case the entropy power is \(N_1+N_2\). </p>
+<p>To obtain the lower bound, suppose we have two distributions in \(n\) dimensions \(p(x_i)\) and \(q(x_i)\) with entropy powers \(\overline N_1\) and \(\overline N_2\). What form should \(p\) and \(q\) have to minimize the entropy power \(\overline N_3\) of their convolution \(r(x_i)\): </p>
+<div class="displaymath" id="a0000000307">
+  \[  r(x_i)=\int p(y_i)q(x_i-y_i)\, dy_i.  \]
+</div>
+<p>The entropy \(H_3\) of \(r\) is given by </p>
+<div class="displaymath" id="a0000000308">
+  \[  H_3=-\int r(x_i)\log r(x_i)\, dx_i.  \]
+</div>
+<p> We wish to minimize this subject to the constraints </p>
+<div class="displaymath" id="a0000000309">
+  \begin{align*}  H_1& =-\int p(x_i)\log p(x_i)\, dx_i\\ H_2& =-\int q(x_i)\log q(x_i)\, dx_i. \end{align*}
+</div>
+<p> We consider then </p>
+<div class="displaymath" id="a0000000310">
+  \begin{align*}  U& =-\int \bigl[r(x)\log r(x)+\lambda p(x)\log p(x) +\mu q(x)\log q(x)\bigr]\, dx\\ \delta U& =-\int \bigl[[1+\log r(x)]\delta r(x) +\lambda [1+\log p(x)]\delta p(x) +\mu [1+\log q(x)] \delta q(x)\bigr]\, dx. \end{align*}
+</div>
+<p>If \(p(x)\) is varied at a particular argument \(x_i=s_i\), the variation in \(r(x)\) is </p>
+<div class="displaymath" id="a0000000311">
+  \[  \delta r(x)=q(x_i-s_i)  \]
+</div>
+<p> and </p>
+<div class="displaymath" id="a0000000312">
+  \[  \delta U=-\int q(x_i-s_i)\log r(x_i)\, dx_i-\lambda \log p(s_i)=0  \]
+</div>
+<p> and similarly when \(q\) is varied. Hence the conditions for a minimum are </p>
+<div class="displaymath" id="a0000000313">
+  \begin{align*}  \int q(x_i-s_i)\log r(x_i)\, dx_i & =-\lambda \log p(s_i)\\ \int p(x_i-s_i)\log r(x_i)\, dx_i & =-\mu \log q(s_i). \end{align*}
+</div>
+<p> If we multiply the first by \(p(s_i)\) and the second by \(q(s_i)\) and integrate with respect to \(s_i\) we obtain </p>
+<div class="displaymath" id="a0000000314">
+  \begin{align*}  H_3=-\lambda H_1\\ H_3=-\mu H_2 \end{align*}
+</div>
+<p> or solving for \(\lambda \) and \(\mu \) and replacing in the equations </p>
+<div class="displaymath" id="a0000000315">
+  \begin{align*}  H_1\int q(x_i-s_i)\log r(x_i)\, dx_i& =-H_3 \log p(s_i)\\ H_2\int p(x_i-s_i)\log r(x_i)\, dx_i& =-H_3 \log q(s_i). \end{align*}
+</div>
+<p> Now suppose \(p(x_i)\) and \(q(x_i)\) are normal </p>
+<div class="displaymath" id="a0000000316">
+  \begin{align*}  p(x_i)=\frac{|A_{ij}|^{n/2}}{(2\pi )^{n/2}}\exp -\tfrac 12\sum A_{ij}x_i x_j\\ q(x_i)=\frac{|B_{ij}|^{n/2}}{(2\pi )^{n/2}}\exp -\tfrac 12\sum B_{ij}x_i x_j. \end{align*}
+</div>
+<p> Then \(r(x_i)\) will also be normal with quadratic form \(C_{ij}\). If the inverses of these forms are \(a_{ij}\), \(b_{ij}\), \(c_{ij}\) then </p>
+<div class="displaymath" id="a0000000317">
+  \[  c_{ij}=a_{ij}+b_{ij}.  \]
+</div>
+<p> We wish to show that these functions satisfy the minimizing conditions if and only if \(a_{ij}=Kb_{ij}\) and thus give the minimum \(H_3\) under the constraints. First we have </p>
+<div class="displaymath" id="a0000000318">
+  \begin{gather*}  \log r(x_i)=\frac{n}{2}\log \frac1{2\pi }|C_{ij}|-\tfrac 12\sum C_{ij}x_i x_j\\ \int q(x_i-s_i)\log r(x_i)\, dx_i=\frac{n}{2}\log \frac1{2\pi }|C_{ij}| -\tfrac 12\sum C_{ij}s_i s_j -\tfrac 12\sum C_{ij} b_{ij}. \end{gather*}
+</div>
+<p> This should equal </p>
+<div class="displaymath" id="a0000000319">
+  \[  \frac{H_3}{H_1}\biggl[\frac{n}{2}\log \frac1{2\pi }|A_{ij}| -\tfrac 12\sum A_{ij}s_i s_j\biggr]  \]
+</div>
+<p> which requires \(\displaystyle A_{ij}=\frac{H_1}{H_3}C_{ij}\). In this case \(\displaystyle A_{ij}=\frac{H_1}{H_2}B_{ij}\) and both equations reduce to identities. </p>
+
+<p>The following will indicate a more general and more rigorous approach to the central definitions of communication theory. Consider a probability measure space whose elements are ordered pairs \((x,y)\). The variables \(x\), \(y\) are to be identified as the possible transmitted and received signals of some long duration \(T\). Let us call the set of all points whose \(x\) belongs to a subset \(S_1\) of \(x\) points the strip over \(S_1\), and similarly the set whose \(y\) belong to \(S_2\) the strip over \(S_2\). We divide \(x\) and \(y\) into a collection of non-overlapping measurable subsets \(X_i\) and \(Y_i\) approximate to the rate of transmission \(R\) by </p>
+<div class="displaymath" id="a0000000320">
+  \[  R_1=\frac1T\sum _i P(X_i,Y_i)\log \frac{P(X_i,Y_i)}{P(X_i)P(Y_i)}  \]
+</div>
+<p> where </p>
+<div class="displaymath" id="a0000000321">
+  \begin{align*}  P(X_i)\quad & \mbox{is the probability measure of the strip over $X_i$}\\ P(Y_i)\quad & \mbox{is the probability measure of the strip over $Y_i$}\\ P(X_i,Y_i)\quad & \mbox{is the probability measure of the intersection of the strips}. \end{align*}
+</div>
+<p> A further subdivision can never decrease \(R_1\). For let \(X_1\) be divided into \(X_1=X_1'+X_1''\) and let </p>
+<div class="displaymath" id="a0000000322">
+  \begin{gather*} \begin{aligned}  P(Y_1)& =a &  P(X_1)& =b+c\\ P(X_1’)& =b &  P(X_1’,Y_1)& =d\\ P(X_1”)& =c \qquad \qquad &  P(X_1”,Y_1)& =e \end{aligned}\\ P(X_1,Y_1)=d+e. \end{gather*}
+</div>
+<p> Then in the sum we have replaced (for the \(X_1\), \(Y_1\) intersection) </p>
+<div class="displaymath" id="a0000000323">
+  \[  (d+e)\log \frac{d+e}{a(b+c)} \quad \text{by}\quad d\log \frac{d}{ab}+e\log \frac{e}{ac}.  \]
+</div>
+<p> It is easily shown that with the limitation we have on \(b\), \(c\), \(d\), \(e\), </p>
+<div class="displaymath" id="a0000000324">
+  \[  \biggl[\frac{d+e}{b+c}\biggr]^{d+e}\leq \frac{d^d e^e}{b^d c^e}  \]
+</div>
+<p> and consequently the sum is increased. Thus the various possible subdivisions form a directed set, with \(R\) monotonic increasing with refinement of the subdivision. We may define \(R\) unambiguously as the least upper bound for \(R_1\) and write it </p>
+<div class="displaymath" id="a0000000325">
+  \[  R=\frac1T\iint P(x,y)\log \frac{P(x,y)}{P(x)P(y)}\, dx\, dy.  \]
+</div>
+<p> This integral, understood in the above sense, includes both the continuous and discrete cases and of course many others which cannot be represented in either form. It is trivial in this formulation that if \(x\) and \(u\) are in one-to-one correspondence, the rate from \(u\) to \(y\) is equal to that from \(x\) to \(y\). If \(v\) is any function of \(y\) (not necessarily with an inverse) then the rate from \(x\) to \(y\) is greater than or equal to that from \(x\) to \(v\) since, in the calculation of the approximations, the subdivisions of \(y\) are essentially a finer subdivision of those for \(v\). More generally if \(y\) and \(v\) are related not functionally but statistically, i.e., we have a probability measure space \((y,v)\), then \(R(x,v)\leq R(x,y)\). This means that any operation applied to the received signal, even though it involves statistical elements, does not increase \(R\). </p>
+<p>Another notion which should be defined precisely in an abstract formulation of the theory is that of “dimension rate,” that is the average number of dimensions required per second to specify a member of an ensemble. In the band limited case \(2W\) numbers per second are sufficient. A general definition can be framed as follows. Let \(f_\alpha (t)\) be an ensemble of functions and let \(\rho _T[f_\alpha (t),f_\beta (t)]\) be a metric measuring the “distance” from \(f_\alpha \) to \(f_\beta \) over the time \(T\) (for example the R.M.S. discrepancy over this interval.) Let \(N(\epsilon ,\delta ,T)\) be the least number of elements \(f\) which can be chosen such that all elements of the ensemble apart from a set of measure \(\delta \) are within the distance \(\epsilon \) of at least one of those chosen. Thus we are covering the space to within \(\epsilon \) apart from a set of small measure \(\delta \). We define the dimension rate \(\lambda \) for the ensemble by the triple limit </p>
+<div class="displaymath" id="a0000000326">
+  \[  \lambda =\qopname \relax \@empty {Lim}_{\delta \to 0}\, \qopname \relax \@empty {Lim}_{\epsilon \to 0}\, \qopname \relax \@empty {Lim}_{T\to \infty } \frac{\log N(\epsilon ,\delta ,T)}{T\log \epsilon }.  \]
+</div>
+<p> This is a generalization of the measure type definitions of dimension in topology, and agrees with the intuitive dimension rate for simple ensembles where the desired result is obvious. </p>
+
+
+</div> <!--main-text -->
+<footer id="footnotes">
+<ol>
+  <li id="a0000000276">It is not a “metric” in the strict sense, however, since in general it does not satisfy either \(\rho (x,y)=\rho (y,x)\) or \(\rho (x,y)+\rho (y,z)\geq \rho (x,z)\).</li>
+</ol>
+</footer>
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0021.html" title="The Continuous Channel"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="A Mathematical Theory of Communication"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

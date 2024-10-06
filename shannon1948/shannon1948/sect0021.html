@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: The Continuous Channel</title>
+<link rel="next" href="sect0022.html" title="The Rate for a Continuous Source" />
+<link rel="prev" href="sect0020.html" title="Mathematical Preliminaries" />
+<link rel="up" href="index.html" title="A Mathematical Theory of Communication" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000022">4 The Continuous Channel</h1>
+<p> The Capacity of a Continuous Channel </p>
+<p>In a continuous channel the input or transmitted signals will be continuous functions of time \(f(t)\) belonging to a certain set, and the output or received signals will be perturbed versions of these. We will consider only the case where both transmitted and received signals are limited to a certain band \(W\). They can then be specified, for a time \(T\), by \(2 T W\) numbers, and their statistical structure by finite dimensional distribution functions. Thus the statistics of the transmitted signal will be determined by </p>
+<div class="displaymath" id="a0000000223">
+  \[  P(x_1,\dots ,x_n)=P(x)  \]
+</div>
+<p> and those of the noise by the conditional probability distribution </p>
+<div class="displaymath" id="a0000000224">
+  \[  P_{x_1,\dots ,x_n}(y_1,\dots ,y_n)=P_x(y).  \]
+</div>
+<p>The rate of transmission of information for a continuous channel is defined in a way analogous to that for a discrete channel, namely </p>
+<div class="displaymath" id="a0000000225">
+  \[  R=H(x)-H_y(x)  \]
+</div>
+<p> where \(H(x)\) is the entropy of the input and \(H_y(x)\) the equivocation. The channel capacity \(C\) is defined as the maximum of \(R\) when we vary the input over all possible ensembles. This means that in a finite dimensional approximation we must vary \(P(x)=P(x_1,\dots ,x_n)\) and maximize </p>
+<div class="displaymath" id="a0000000226">
+  \[  -\int P(x)\log P(x)\, dx+\iint P(x,y)\log \frac{P(x,y)}{P(y)}\, dx\, dy.  \]
+</div>
+<p> This can be written </p>
+<div class="displaymath" id="a0000000227">
+  \[  \iint P(x,y)\log \frac{P(x,y)}{P(x)P(y)}\, dx\, dy  \]
+</div>
+<p> using the fact that \(\displaystyle \iint P(x,y)\log P(x)\, dx\, dy=\int P(x)\log P(x)\, dx\). The channel capacity is thus expressed as follows: </p>
+<div class="displaymath" id="a0000000228">
+  \[  C=\qopname \relax \@empty {Lim}_{T\to \infty }\qopname \relax \@empty {Max}_{P(x)}\frac1T \iint P(x,y)\log \frac{P(x,y)}{P(x)P(y)}\, dx\, dy.  \]
+</div>
+<p>It is obvious in this form that \(R\) and \(C\) are independent of the coordinate system since the numerator and denominator in \(\displaystyle \log \frac{P(x,y)}{P(x)P(y)}\) will be multiplied by the same factors when \(x\) and \(y\) are transformed in any one-to-one way. This integral expression for \(C\) is more general than \(H(x)-H_y(x)\). Properly interpreted (see Appendix&#160;<a href="sect0022.html#ap:7">23</a>) it will always exist while \(H(x)-H_y(x)\) may assume an indeterminate form \(\infty -\infty \) in some cases. This occurs, for example, if \(x\) is limited to a surface of fewer dimensions than \(n\) in its \(n\) dimensional approximation. </p>
+<p>If the logarithmic base used in computing \(H(x)\) and \(H_y(x)\) is two then \(C\) is the maximum number of binary digits that can be sent per second over the channel with arbitrarily small equivocation, just as in the discrete case. This can be seen physically by dividing the space of signals into a large number of small cells, sufficiently small so that the probability density \(P_x(y)\) of signal \(x\) being perturbed to point \(y\) is substantially constant over a cell (either of \(x\) or \(y\)). If the cells are considered as distinct points the situation is essentially the same as a discrete channel and the proofs used there will apply. But it is clear physically that this quantizing of the volume into individual points cannot in any practical situation alter the final answer significantly, provided the regions are sufficiently small. Thus the capacity will be the limit of the capacities for the discrete subdivisions and this is just the continuous capacity defined above. </p>
+<p>On the mathematical side it can be shown first (see Appendix&#160;<a href="sect0022.html#ap:7">23</a>) that if \(u\) is the message, \(x\) is the signal, \(y\) is the received signal (perturbed by noise) and \(v\) is the recovered message then </p>
+<div class="displaymath" id="a0000000229">
+  \[  H(x)-H_y(x)\geq H(u)-H_v(u)  \]
+</div>
+<p> regardless of what operations are performed on \(u\) to obtain \(x\) or on \(y\) to obtain \(v\). Thus no matter how we encode the binary digits to obtain the signal, or how we decode the received signal to recover the message, the discrete rate for the binary digits does not exceed the channel capacity we have defined. On the other hand, it is possible under very general conditions to find a coding system for transmitting binary digits at the rate \(C\) with as small an equivocation or frequency of errors as desired. This is true, for example, if, when we take a finite dimensional approximating space for the signal functions, \(P(x,y)\) is continuous in both \(x\) and \(y\) except at a set of points of probability zero. </p>
+<p>An important special case occurs when the noise is added to the signal and is independent of it (in the probability sense). Then \(P_x(y)\) is a function only of the difference \(n=(y-x)\), </p>
+<div class="displaymath" id="a0000000230">
+  \[  P_x(y)=Q(y-x)  \]
+</div>
+<p> and we can assign a definite entropy to the noise (independent of the statistics of the signal), namely the entropy of the distribution \(Q(n)\). This entropy will be denoted by \(H(n)\). </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:16">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">16</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> If the signal and noise are independent and the received signal is the sum of the transmitted signal and the noise then the rate of transmission is </p>
+<div class="displaymath" id="a0000000231">
+  \[  R=H(y)-H(n),  \]
+</div>
+<p> i.e., the entropy of the received signal less the entropy of the noise. The channel capacity is </p>
+<div class="displaymath" id="a0000000232">
+  \[  C=\qopname \relax \@empty {Max}_{P(x)} H(y)-H(n).  \]
+</div>
+
+  </div>
+</div>
+<p>We have, since \(y=x+n\): </p>
+<div class="displaymath" id="a0000000233">
+  \[  H(x,y)=H(x,n).  \]
+</div>
+<p> Expanding the left side and using the fact that \(x\) and \(n\) are independent </p>
+<div class="displaymath" id="a0000000234">
+  \[  H(y)+H_y(x)=H(x)+H(n).  \]
+</div>
+<p> Hence </p>
+<div class="displaymath" id="a0000000235">
+  \[  R=H(x)-H_y(x)=H(y)-H(n).  \]
+</div>
+<p>Since \(H(n)\) is independent of \(P(x)\), maximizing \(R\) requires maximizing \(H(y)\), the entropy of the received signal. If there are certain constraints on the ensemble of transmitted signals, the entropy of the received signal must be maximized subject to these constraints. </p>
+<p>Channel Capacity with an Average Power Limitation </p>
+<p>A simple application of Theorem&#160;<a href="sect0021.html#thm:16">16</a> is the case when the noise is a white thermal noise and the transmitted signals are limited to a certain average power \(P\). Then the received signals have an average power \(P+N\) where \(N\) is the average noise power. The maximum entropy for the received signals occurs when they also form a white noise ensemble since this is the greatest possible entropy for a power \(P+N\) and can be obtained by a suitable choice of transmitted signals, namely if they form a white noise ensemble of power \(P\). The entropy (per second) of the received ensemble is then </p>
+<div class="displaymath" id="a0000000236">
+  \[  H(y)=W\log 2\pi e(P+N),  \]
+</div>
+<p> and the noise entropy is </p>
+<div class="displaymath" id="a0000000237">
+  \[  H(n)=W\log 2\pi e N.  \]
+</div>
+<p> The channel capacity is </p>
+<div class="displaymath" id="a0000000238">
+  \[  C=H(y)-H(n)=W\log \frac{P+N}{N}.  \]
+</div>
+<p>Summarizing we have the following: </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:17">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">17</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> The capacity of a channel of band \(W\) perturbed by white thermal noise power \(N\) when the average transmitter power is limited to \(P\) is given by </p>
+<div class="displaymath" id="a0000000239">
+  \[  C=W\log \frac{P+N}{N}.  \]
+</div>
+
+  </div>
+</div>
+<p>This means that by sufficiently involved encoding systems we can transmit binary digits at the rate \(\displaystyle W\log _2\frac{P+N}{N}\) bits per second, with arbitrarily small frequency of errors. It is not possible to transmit at a higher rate by any encoding system without a definite positive frequency of errors. </p>
+<p>To approximate this limiting rate of transmission the transmitted signals must approximate, in statistical properties, a white noise.<a class="footnote" href="#a0000000240">
+  <sup class="footnotemark">1</sup>
+</a> A system which approaches the ideal rate may be described as follows: Let \(M=2^s\) samples of white noise be constructed each of duration \(T\). These are assigned binary numbers from \(0\) to \(M-1\). At the transmitter the message sequences are broken up into groups of \(s\) and for each group the corresponding noise sample is transmitted as the signal. At the receiver the \(M\) samples are known and the actual received signal (perturbed by noise) is compared with each of them. The sample which has the least R.M.S. discrepancy from the received signal is chosen as the transmitted signal and the corresponding binary number reconstructed. This process amounts to choosing the most probable (<em>a posteriori</em>) signal. The number \(M\) of noise samples used will depend on the tolerable frequency \(\epsilon \) of errors, but for almost all selections of samples we have </p>
+<div class="displaymath" id="a0000000241">
+  \[  \qopname \relax \@empty {Lim}_{\epsilon \to 0}\qopname \relax \@empty {Lim}_{T\to \infty }\frac{\log M(\epsilon ,T)}{T}=W\log \frac{P+N}{N},  \]
+</div>
+<p> so that no matter how small \(\epsilon \) is chosen, we can, by taking \(T\) sufficiently large, transmit as near as we wish to \(\displaystyle TW\log \frac{P+N}{N}\) binary digits in the time \(T\). </p>
+<p>Formulas similar to \(\displaystyle C=W\log \frac{P+N}{N}\) for the white noise case have been developed independently by several other writers, although with somewhat different interpretations. We may mention the work of N.&#160;Wiener,<a class="footnote" href="#a0000000242">
+  <sup class="footnotemark">2</sup>
+</a> W.&#160;G.&#160;Tuller,<a class="footnote" href="#a0000000243">
+  <sup class="footnotemark">3</sup>
+</a> and H.&#160;Sullivan in this connection. </p>
+<p>In the case of an arbitrary perturbing noise (not necessarily white thermal noise) it does not appear that the maximizing problem involved in determining the channel capacity \(C\) can be solved explicitly. However, upper and lower bounds can be set for \(C\) in terms of the average noise power \(N\) the noise entropy power \(N_1\). These bounds are sufficiently close together in most practical cases to furnish a satisfactory solution to the problem. </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:18">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">18</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> The capacity of a channel of band \(W\) perturbed by an arbitrary noise is bounded by the inequalities </p>
+<div class="displaymath" id="a0000000244">
+  \[  W\log \frac{P+N_1}{N_1}\leq C\leq W\log \frac{P+N}{N_1}  \]
+</div>
+<p> where </p>
+<div class="displaymath" id="a0000000245">
+  \begin{align*}  P& =\text{average transmitter power}\\ N& =\text{average noise power}\\ N_1& =\text{entropy power of the noise.} \end{align*}
+</div>
+
+  </div>
+</div>
+<p>Here again the average power of the perturbed signals will be \(P+N\). The maximum entropy for this power would occur if the received signal were white noise and would be \(W\log 2\pi e(P+N)\). It may not be possible to achieve this; i.e., there may not be any ensemble of transmitted signals which, added to the perturbing noise, produce a white thermal noise at the receiver, but at least this sets an upper bound to \(H(y)\). We have, therefore </p>
+<div class="displaymath" id="a0000000246">
+  \begin{align*}  C& =\qopname \relax \@empty {Max}H(y) - H(n)\\ & \leq W \log 2\pi e(P+N)-W\log 2\pi e N_1. \end{align*}
+</div>
+<p> This is the upper limit given in the theorem. The lower limit can be obtained by considering the rate if we make the transmitted signal a white noise, of power \(P\). In this case the entropy power of the received signal must be at least as great as that of a white noise of power \(P+N_1\) since we have shown in in a previous theorem that the entropy power of the sum of two ensembles is greater than or equal to the sum of the individual entropy powers. Hence </p>
+<div class="displaymath" id="a0000000247">
+  \[  \qopname \relax \@empty {Max}H(y)\geq W\log 2\pi e(P+N_1)  \]
+</div>
+<p> and </p>
+<div class="displaymath" id="a0000000248">
+  \begin{align*}  C& \geq W \log 2\pi e(P+N_1)-W\log 2\pi e N_1\\ & =W\log \frac{P+N_1}{N_1}. \end{align*}
+</div>
+<p>As \(P\) increases, the upper and lower bounds approach each other, so we have as an asymptotic rate </p>
+<div class="displaymath" id="a0000000249">
+  \[  W\log \frac{P+N}{N_1}.  \]
+</div>
+<p> If the noise is itself white, \(N=N_1\) and the result reduces to the formula proved previously: </p>
+<div class="displaymath" id="a0000000250">
+  \[  C=W\log \Bigl(1+\frac PN\Bigr).  \]
+</div>
+<p>If the noise is Gaussian but with a spectrum which is not necessarily flat, \(N_1\) is the geometric mean of the noise power over the various frequencies in the band \(W\). Thus </p>
+<div class="displaymath" id="a0000000251">
+  \[  N_1=\exp \frac1W\int _W \log N(f)\, df  \]
+</div>
+<p> where \(N(f)\) is the noise power at frequency \(f\). </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:19">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">19</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> If we set the capacity for a given transmitter power \(P\) equal to </p>
+<div class="displaymath" id="a0000000252">
+  \[  C=W\log \frac{P+N-\eta }{N_1}  \]
+</div>
+<p> then \(\eta \) is monotonic decreasing as \(P\) increases and approaches 0 as a limit. </p>
+
+  </div>
+</div>
+<p>Suppose that for a given power \(P_1\) the channel capacity is </p>
+<div class="displaymath" id="a0000000253">
+  \[  W\log \frac{P_1+N-\eta _1}{N_1}.  \]
+</div>
+<p> This means that the best signal distribution, say \(p(x)\), when added to the noise distribution \(q(x)\), gives a received distribution \(r(y)\) whose entropy power is \((P_1+N-\eta _1)\). Let us increase the power to \(P_1+\Delta P\) by adding a white noise of power \(\Delta P\) to the signal. The entropy of the received signal is now at least </p>
+<div class="displaymath" id="a0000000254">
+  \[  H(y)=W\log 2\pi e(P_1+N-\eta _1+\Delta P)  \]
+</div>
+<p> by application of the theorem on the minimum entropy power of a sum. Hence, since we can attain the \(H\) indicated, the entropy of the maximizing distribution must be at least as great and \(\eta \) must be monotonic decreasing. To show that \(\eta \to 0\) as \(P\to \infty \) consider a signal which is white noise with a large \(P\). Whatever the perturbing noise, the received signal will be approximately a white noise, if \(P\) is sufficiently large, in the sense of having an entropy power approaching \(P+N\). </p>
+<p>The Channel Capacity with a Peak Power Limitation </p>
+<p>In some applications the transmitter is limited not by the average power output but by the peak instantaneous power. The problem of calculating the channel capacity is then that of maximizing (by variation of the ensemble of transmitted symbols) </p>
+<div class="displaymath" id="a0000000255">
+  \[  H(y)-H(n)  \]
+</div>
+<p> subject to the constraint that all the functions \(f(t)\) in the ensemble be less than or equal to \(\sqrt{S}\), say, for all \(t\). A constraint of this type does not work out as well mathematically as the average power limitation. The most we have obtained for this case is a lower bound valid for all \(\displaystyle \frac SN\), an “asymptotic” upper bound (valid for large \(\displaystyle \frac SN\)) and an asymptotic value of \(C\) for \(\displaystyle \frac SN\) small. </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:20">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">20</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> The channel capacity \(C\) for a band \(W\) perturbed by white thermal noise of power \(N\) is bounded by </p>
+<div class="displaymath" id="a0000000256">
+  \[  C\geq W\log \frac{2}{\pi e^3}\frac SN,  \]
+</div>
+<p> where \(S\) is the peak allowed transmitter power. For sufficiently large \(\displaystyle \frac SN\) </p>
+<div class="displaymath" id="a0000000257">
+  \[  C\leq W\log \frac{\frac{2}{\pi e}S+N}{N}(1+\epsilon )  \]
+</div>
+<p> where \(\epsilon \) is arbitrarily small. As \(\displaystyle \frac SN\to 0\) (and provided the band \(W\) starts at \(0\)) </p>
+<div class="displaymath" id="a0000000258">
+  \[  C \! \! \Bigm /\!  W\log \biggl(1+\frac SN\biggr) \to 1.  \]
+</div>
+
+  </div>
+</div>
+<p>We wish to maximize the entropy of the received signal. If \(\displaystyle \frac SN\) is large this will occur very nearly when we maximize the entropy of the transmitted ensemble. </p>
+<p>The asymptotic upper bound is obtained by relaxing the conditions on the ensemble. Let us suppose that the power is limited to \(S\) not at every instant of time, but only at the sample points. The maximum entropy of the transmitted ensemble under these weakened conditions is certainly greater than or equal to that under the original conditions. This altered problem can be solved easily. The maximum entropy occurs if the different samples are independent and have a distribution function which is constant from \(-\sqrt S\) to \(+\sqrt S\). The entropy can be calculated as </p>
+<div class="displaymath" id="a0000000259">
+  \[  W\log 4S.  \]
+</div>
+<p> The received signal will then have an entropy less than </p>
+<div class="displaymath" id="a0000000260">
+  \[  W\log (4S+2\pi e N)(1+\epsilon )  \]
+</div>
+<p> with \(\epsilon \to 0\) as \(\displaystyle \frac SN\to \infty \) and the channel capacity is obtained by subtracting the entropy of the white noise, \(W\log 2\pi e N\): </p>
+<div class="displaymath" id="a0000000261">
+  \[  W\log (4S+2\pi e N)(1+\epsilon )-W\log (2\pi e N) =W\log \frac{\frac{2}{\pi e}S+N}{N}(1+\epsilon ).  \]
+</div>
+<p> This is the desired upper bound to the channel capacity. </p>
+<p>To obtain a lower bound consider the same ensemble of functions. Let these functions be passed through an ideal filter with a triangular transfer characteristic. The gain is to be unity at frequency&#160;0 and decline linearly down to gain&#160;0 at frequency&#160;\(W\). We first show that the output functions of the filter have a peak power limitation \(S\) at all times (not just the sample points). First we note that a pulse \(\displaystyle \frac{\sin 2\pi Wt}{2\pi Wt}\) going into the filter produces </p>
+<div class="displaymath" id="a0000000262">
+  \[  \frac12\frac{\sin ^2\pi Wt}{(\pi Wt)^2}  \]
+</div>
+<p> in the output. This function is never negative. The input function (in the general case) can be thought of as the sum of a series of shifted functions </p>
+<div class="displaymath" id="a0000000263">
+  \[  a\frac{\sin 2\pi Wt}{2\pi Wt}  \]
+</div>
+<p> where \(a\), the amplitude of the sample, is not greater than \(\sqrt S\). Hence the output is the sum of shifted functions of the non-negative form above with the same coefficients. These functions being non-negative, the greatest positive value for any \(t\) is obtained when all the coefficients \(a\) have their maximum positive values, i.e., \(\sqrt S\). In this case the input function was a constant of amplitude \(\sqrt S\) and since the filter has unit gain for D.C., the output is the same. Hence the output ensemble has a peak power \(S\). </p>
+<p>The entropy of the output ensemble can be calculated from that of the input ensemble by using the theorem dealing with such a situation. The output entropy is equal to the input entropy plus the geometrical mean gain of the filter: </p>
+<div class="displaymath" id="a0000000264">
+  \[  \int _0^W\log G^2\, df=\int _0^W\log \Bigl(\frac{W-f}{W}\Bigr)^2\, df=-2W.  \]
+</div>
+<p> Hence the output entropy is </p>
+<div class="displaymath" id="a0000000265">
+  \[  W\log 4S-2W=W\log \frac{4S}{e^2}  \]
+</div>
+<p> and the channel capacity is greater than </p>
+<div class="displaymath" id="a0000000266">
+  \[  W\log \frac{2}{\pi e^3}\frac SN.  \]
+</div>
+<p>We now wish to show that, for small \(\displaystyle \frac SN\) (peak signal power over average white noise power), the channel capacity is approximately </p>
+<div class="displaymath" id="a0000000267">
+  \[  C=W\log \biggl(1+\frac SN\biggr).  \]
+</div>
+<p> More precisely \(\displaystyle C\! \! \Bigm /\! W\log \biggl(1+\frac SN\biggr)\to 1\) as \(\displaystyle \frac SN\to 0\). Since the average signal power \(P\) is less than or equal to the peak \(S\), it follows that for all \(\displaystyle \frac SN\) </p>
+<div class="displaymath" id="a0000000268">
+  \[  C\leq W\log \biggl(1+\frac PN\biggr)\leq W\log \biggl(1+\frac SN\biggr).  \]
+</div>
+<p> Therefore, if we can find an ensemble of functions such that they correspond to a rate nearly \(\displaystyle W\log \biggl(1+\frac SN\biggr)\) and are limited to band \(W\) and peak \(S\) the result will be proved. Consider the ensemble of functions of the following type. A series of \(t\) samples have the same value, either \(+\sqrt{S}\) or \(-\sqrt{S}\), then the next \(t\) samples have the same value, etc. The value for a series is chosen at random, probability \(\frac12\) for \(+\sqrt{S}\) and \(\frac12\) for \(-\sqrt{S}\). If this ensemble be passed through a filter with triangular gain characteristic (unit gain at D.C.), the output is peak limited to \(\pm S\). Furthermore the average power is nearly \(S\) and can be made to approach this by taking \(t\) sufficiently large. The entropy of the sum of this and the thermal noise can be found by applying the theorem on the sum of a noise and a small signal. This theorem will apply if </p>
+<div class="displaymath" id="a0000000269">
+  \[  \sqrt{t}\frac SN  \]
+</div>
+<p> is sufficiently small. This can be ensured by taking \(\displaystyle \frac SN\) small enough (after \(t\) is chosen). The entropy power will be \(S+N\) to as close an approximation as desired, and hence the rate of transmission as near as we wish to </p>
+<div class="displaymath" id="a0000000270">
+  \[  W\log \biggl(\frac{S+N}{N}\biggr).  \]
+</div>
+
+</div> <!--main-text -->
+<footer id="footnotes">
+<ol>
+  <li id="a0000000240">This and other properties of the white noise case are discussed from the geometrical point of view in “Communication in the Presence of Noise,” <i class="it">loc.&#160;cit.</i></li>
+  <li id="a0000000242"><i class="it">Cybernetics,</i> <i class="it">loc.&#160;cit.</i></li>
+  <li id="a0000000243">“Theoretical Limitations on the Rate of Transmission of Information,” <i class="it">Proceedings of the Institute of Radio Engineers,</i> v.&#160;37, No.&#160;5, May, 1949, pp.&#160;468–78.</li>
+</ol>
+</footer>
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0020.html" title="Mathematical Preliminaries"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="A Mathematical Theory of Communication"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0022.html" title="The Rate for a Continuous Source"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

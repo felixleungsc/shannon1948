@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: The Discrete Noiseless Channel</title>
+<link rel="next" href="sect0003.html" title="The Discrete Source of Information" />
+<link rel="prev" href="sect0002.html" title="Discrete Noiseless Systems" />
+<link rel="up" href="sect0002.html" title="Discrete Noiseless Systems" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class=" active">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class=" active current">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="sec:1">1 The Discrete Noiseless Channel</h1>
+
+<p>Teletype and telegraphy are two simple examples of a discrete channel for transmitting information. Generally, a discrete channel will mean a system whereby a sequence of choices from a finite set of elementary symbols \(S_1,\dots ,S_n\) can be transmitted from one point to another. Each of the symbols \(S_i\) is assumed to have a certain duration in time \(t_i\) seconds (not necessarily the same for different \(S_i\), for example the dots and dashes in telegraphy). It is not required that all possible sequences of the \(S_i\) be capable of transmission on the system; certain sequences only may be allowed. These will be possible signals for the channel. Thus in telegraphy suppose the symbols are: (1) A dot, consisting of line closure for a unit of time and then line open for a unit of time; (2) A dash, consisting of three time units of closure and one unit open; (3) A letter space consisting of, say, three units of line open; (4) A word space of six units of line open. We might place the restriction on allowable sequences that no spaces follow each other (for if two letter spaces are adjacent, it is identical with a word space). The question we now consider is how one can measure the capacity of such a channel to transmit information. </p>
+<p>In the teletype case where all symbols are of the same duration, and any sequence of the 32 symbols is allowed the answer is easy. Each symbol represents five bits of information. If the system transmits \(n\) symbols per second it is natural to say that the channel has a capacity of \(5n\) bits per second. This does not mean that the teletype channel will always be transmitting information at this rate — this is the maximum possible rate and whether or not the actual rate reaches this maximum depends on the source of information which feeds the channel, as will appear later. </p>
+<p>In the more general case with different lengths of symbols and constraints on the allowed sequences, we make the following definition: </p>
+<p>Definition: The capacity \(C\) of a discrete channel is given by </p>
+<div class="displaymath" id="a0000000027">
+  \[  C = \qopname \relax \@empty {Lim}_{T\to \infty } \frac{\log N(T)}{T}  \]
+</div>
+<p> where \(N(T)\) is the number of allowed signals of duration \(T\). </p>
+<p>It is easily seen that in the teletype case this reduces to the previous result. It can be shown that the limit in question will exist as a finite number in most cases of interest. Suppose all sequences of the symbols \(S_1,\dots ,S_n\) are allowed and these symbols have durations \(t_1,\dots ,t_n\). What is the channel capacity? If \(N(t)\) represents the number of sequences of duration \(t\) we have </p>
+<div class="displaymath" id="a0000000028">
+  \[  N(t) = N(t-t_1) + N(t-t_2) + \dots + N(t-t_n).  \]
+</div>
+<p> The total number is equal to the sum of the numbers of sequences ending in \(S_1,S_2,\dots ,S_n\) and these are \(N(t-t_1),N(t-t_2),\dots ,N(t-t_n)\), respectively. According to a well-known result in finite differences, \(N(t)\) is then asymptotic for large \(t\) to \(X_0^t\) where \(X_0\) is the largest real solution of the characteristic equation: </p>
+<div class="displaymath" id="a0000000029">
+  \[  X^{-t_1} + X^{-t_2} + \dots + X^{-t_n} = 1  \]
+</div>
+<p> and therefore </p>
+<div class="displaymath" id="a0000000030">
+  \[  C = \log X_0.  \]
+</div>
+<p>In case there are restrictions on allowed sequences we may still often obtain a difference equation of this type and find \(C\) from the characteristic equation. In the telegraphy case mentioned above </p>
+<div class="displaymath" id="a0000000031">
+  \[  N(t) = N(t-2) + N(t-4) + N(t-5) + N(t-7) + N(t-8) + N(t-10)  \]
+</div>
+<p> as we see by counting sequences of symbols according to the last or next to the last symbol occurring. Hence \(C\) is \(- \log \mu _0\) where \(\mu _0\) is the positive root of \(1= \mu ^2 + \mu ^4 + \mu ^5 + \mu ^7 + \mu ^8 + \mu ^{10}\). Solving this we find \(C= 0.539\). </p>
+<p>A very general type of restriction which may be placed on allowed sequences is the following: We imagine a number of possible states \(a_1,a_2,\dots ,\allowbreak a_m\). For each state only certain symbols from the set \(S_1,\dots ,S_n\) can be transmitted (different subsets for the different states). When one of these has been transmitted the state changes to a new state depending both on the old state and the particular symbol transmitted. The telegraph case is a simple example of this. There are two states depending on whether or not a space was the last symbol transmitted. If so, then only a dot or a dash can be sent next and the state always changes. If not, any symbol can be transmitted and the state changes if a space is sent, otherwise it remains the same. The conditions can be indicated in a linear graph as shown in Fig.&#160;<a href="sec-1.html#fig:2">2</a>. </p>
+<figure id="fig:2">
+  <p> <div class="centered"></div> </p>
+<figcaption>
+  <span class="caption_title">Fig.</span> 
+  <span class="caption_ref">2</span> 
+  <span class="caption_text">Graphical representation of the constraints on telegraph symbols.</span> 
+</figcaption>
+
+
+</figure>
+<p> The junction points correspond to the states and the lines indicate the symbols possible in a state and the resulting state. In Appendix 1 it is shown that if the conditions on allowed sequences can be described in this form \(C\) will exist and can be calculated in accordance with the following result: </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:1">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">1</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> Let \(b_{ij}^{(s)}\) be the duration of the \(s^{\text{th}}\) symbol which is allowable in state \(i\) and leads to state \(j\). Then the channel capacity \(C\) is equal to \(\log W\) where \(W\) is the largest real root of the determinant equation: </p>
+<div class="displaymath" id="a0000000032">
+  \[  \Bigl| \sum _s W^{-b_{ij}^{(s)}} - \delta _{ij} \Bigr| = 0  \]
+</div>
+<p> where \(\delta _{ij} =1\) if \(i=j\) and is zero otherwise. </p>
+
+  </div>
+</div>
+<p>For example, in the telegraph case (Fig.&#160;<a href="sec-1.html#fig:2">2</a>) the determinant is: </p>
+<div class="displaymath" id="a0000000033">
+  \[  \biggl| \begin{matrix}  -1 
+
+&  (W^{-2} + W^{-4}) 
+
+\\ (W^{-3} + W^{-6}) 
+
+&  (W^{-2} + W^{-4} -1 ) 
+
+\end{matrix} \biggr| = 0.  \]
+</div>
+<p> On expansion this leads to the equation given above for this case. </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0002.html" title="Discrete Noiseless Systems"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0002.html" title="Discrete Noiseless Systems"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0003.html" title="The Discrete Source of Information"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: Maximizing the Rate for a System of Constraints</title>
+<link rel="next" href="sect0020.html" title="Mathematical Preliminaries" />
+<link rel="prev" href="ap-3.html" title="Theorems on Ergodic Sources" />
+<link rel="up" href="sect0012.html" title="The Discrete Channel with Noise" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class=" active current">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="ap:4">D Maximizing the Rate for a System of Constraints</h1>
+
+<p>Suppose we have a set of constraints on sequences of symbols that is of the finite state type and can be represented therefore by a linear graph. Let \(\ell _{ij}^{(s)}\) be the lengths of the various symbols that can occur in passing from state \(i\) to state \(j\). What distribution of probabilities \(P_i\) for the different states and \(p_{ij}^{(s)}\) for choosing symbol \(s\) in state \(i\) and going to state \(j\) maximizes the rate of generating information under these constraints? The constraints define a discrete channel and the maximum rate must be less than or equal to the capacity \(C\) of this channel, since if all blocks of large length were equally likely, this rate would result, and if possible this would be best. We will show that this rate can be achieved by proper choice of the \(P_i\) and \(p_{ij}^{(s)}\). </p>
+<p>The rate in question is </p>
+<div class="displaymath" id="a0000000148">
+  \[  \frac{-\sum P_i p_{ij}^{(s)}\log p_{ij}^{(s)}}{\sum P_{i} p_{ij}^{(s)} \ell _{ij}^{(s)}} =\frac{N}{M}.  \]
+</div>
+<p>Let \(\ell _{ij}=\sum _s\ell _{ij}^{(s)}\). Evidently for a maximum \(p_{ij}^{(s)}=k\exp \ell _{ij}^{(s)}\). The constraints on maximization are \(\sum P_i=1\), \(\sum _j p_{ij}=1\), \(\sum P_i(p_{ij}-\delta _{ij})=0\). Hence we maximize </p>
+<div class="displaymath" id="a0000000149">
+  \begin{align*}  U& =\frac{-\sum P_i p_{ij}\log p_{ij}}{\sum P_i p_{ij} \ell _{ij}} +\lambda \sum _i P_i+\sum \mu _i p_{ij}+\sum \eta _j P_i(p_{ij}-\delta _{ij})\\ \frac{\partial U}{\partial p_{ij}}& = -\frac{M P_i(1+\log p_{ij})+NP_i\ell _{ij}}{M^2}+\lambda +\mu _i+\eta _i P_i=0. \end{align*}
+</div>
+<p> Solving for \(p_{ij}\) </p>
+<div class="displaymath" id="a0000000150">
+  \[  p_{ij}=A_i B_j D^{-\ell _{ij}}.  \]
+</div>
+<p> Since </p>
+<div class="displaymath" id="a0000000151">
+  \begin{gather*}  \sum _j p_{ij}=1,\quad A_i^{-1}=\sum _j B_j D^{-\ell _{ij}}\\ p_{ij}=\frac{B_j D^{-\ell _{ij}}}{\sum _s B_s D^{-\ell _{is}}}. \end{gather*}
+</div>
+<p> The correct value of \(D\) is the capacity \(C\) and the \(B_j\) are solutions of </p>
+<div class="displaymath" id="a0000000152">
+  \[  B_i=\sum B_j C^{-\ell _{ij}}  \]
+</div>
+<p> for then </p>
+<div class="displaymath" id="a0000000153">
+  \begin{gather*}  p_{ij}=\frac{B_j}{B_i}C^{-\ell _{ij}}\\ \sum P_i\frac{B_j}{B_i}C^{-\ell _{ij}}=P_j \end{gather*}
+</div>
+<p> or </p>
+<div class="displaymath" id="a0000000154">
+  \[  \sum \frac{P_i}{B_i}C^{-\ell _{ij}}=\frac{P_j}{B_j}.  \]
+</div>
+<p> So that if \(\lambda _i\) satisfy </p>
+<div class="displaymath" id="a0000000155">
+  \begin{gather*}  \sum \gamma _i C^{-\ell _{ij}} = \gamma _j\\ P_i=B_i\gamma _i. \end{gather*}
+</div>
+<p> Both the sets of equations for \(B_i\) and \(\gamma _i\) can be satisfied since \(C\) is such that </p>
+<div class="displaymath" id="a0000000156">
+  \[  |C^{-\ell _{ij}}-\delta _{ij}|=0.  \]
+</div>
+<p> In this case the rate is </p>
+<div class="displaymath" id="a0000000157">
+  \[  -\frac{\sum P_ip_{ij}\log \frac{B_j}{B_i}C^{-\ell _{ij}}}{\sum P_ip_{ij}\ell _{ij}} =C-\frac{\sum P_ip_{ij}\log \frac{B_j}{B_i}}{\sum P_ip_{ij}\ell _{ij}}  \]
+</div>
+<p> but </p>
+<div class="displaymath" id="a0000000158">
+  \[  \sum P_i p_{ij}(\log B_j-\log B_i)=\sum _j P_j\log B_j-\sum P_i\log B_i=0  \]
+</div>
+<p> Hence the rate is \(C\) and as this could never be exceeded this is the maximum, justifying the assumed solution. </p>
+<p> <br /> </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="ap-3.html" title="Theorems on Ergodic Sources"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0012.html" title="The Discrete Channel with Noise"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0020.html" title="Mathematical Preliminaries"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

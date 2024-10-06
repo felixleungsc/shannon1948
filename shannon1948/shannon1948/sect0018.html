@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: The Channel Capacity in Certain Special Cases</title>
+<link rel="next" href="sect0019.html" title="An Example of Efficient Coding" />
+<link rel="prev" href="sect0017.html" title="Example of a Discrete Channel and its Capacity" />
+<link rel="up" href="sect0012.html" title="The Discrete Channel with Noise" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000019">16 The Channel Capacity in Certain Special Cases</h1>
+<p>If the noise affects successive channel symbols independently it can be described by a set of transition probabilities \(p_{ij}\). This is the probability, if symbol \(i\) is sent, that \(j\) will be received. The maximum channel rate is then given by the maximum of </p>
+<div class="displaymath" id="a0000000112">
+  \[  -\sum _{i,j} P_i p_{ij} \log \sum _i P_i p_{ij} +\sum _{i,j} P_i p_{ij} \log p_{ij}  \]
+</div>
+<p> where we vary the \(P_i\) subject to \(\sum P_i = 1\). This leads by the method of Lagrange to the equations, </p>
+<div class="displaymath" id="a0000000113">
+  \[  \sum _j p_{sj} \log \frac{p_{sj}}{\sum _i P_i p_{ij}} = \mu \qquad s = 1,2,\dots .  \]
+</div>
+<p> Multiplying by \(P_s\) and summing on \(s\) shows that \(\mu = C\). Let the inverse of \(p_{sj}\) (if it exists) be \(h_{st}\) so that \(\sum _s h_{st} p_{sj} = \delta _{tj}\). Then: </p>
+<div class="displaymath" id="a0000000114">
+  \[  \sum _{s,j} h_{st} p_{sj} \log p_{sj} - \log \sum _{i} P_i p_{it} = C \sum _s h_{st}.  \]
+</div>
+<p> Hence: </p>
+<div class="displaymath" id="a0000000115">
+  \[  \sum _i P_i p_{it} = \exp \Bigl[- C \sum _s h_{st} + \sum _{s,j} h_{st} p_{sj} \log p_{sj} \Bigr]  \]
+</div>
+<p> or, </p>
+<div class="displaymath" id="a0000000116">
+  \[  P_i = \sum _t h_{it} \exp \Bigl[ - C \sum _s h_{st} + \sum _{s,j} h_{st} p_{sj} \log p_{sj} \Bigr].  \]
+</div>
+<p>This is the system of equations for determining the maximizing values of \(P_i\), with \(C\) to be determined so that \(\sum P_i = 1\). When this is done \(C\) will be the channel capacity, and the \(P_i\) the proper probabilities for the channel symbols to achieve this capacity. </p>
+<p>If each input symbol has the same set of probabilities on the lines emerging from it, and the same is true of each output symbol, the capacity can be easily calculated. Examples are shown in Fig.&#160;<a href="sect0018.html#fig:12">12</a>. </p>
+<figure id="fig:12">
+  <p> <div class="centered"></div> </p>
+<figcaption>
+  <span class="caption_title">Fig.</span> 
+  <span class="caption_ref">12</span> 
+  <span class="caption_text">Examples of discrete channels with the same transition probabilities for each input and for each output.</span> 
+</figcaption>
+
+
+</figure>
+<p> In such a case \(H_x(y)\) is independent of the distribution of probabilities on the input symbols, and is given by \(-\sum p_i\log p_i\) where the \(p_i\) are the values of the transition probabilities from any input symbol. The channel capacity is </p>
+<div class="displaymath" id="a0000000117">
+  \[  \qopname \relax \@empty {Max}\bigl[ H(y) - H_x(y) \bigr] = \qopname \relax \@empty {Max}H(y) + \sum p_i \log p_i.  \]
+</div>
+<p> The maximum of \(H(y)\) is clearly \(\log m\) where \(m\) is the number of output symbols, since it is possible to make them all equally probable by making the input symbols equally probable. The channel capacity is therefore </p>
+<div class="displaymath" id="a0000000118">
+  \[  C = \log m + \sum p_i \log p_i.  \]
+</div>
+<p> In Fig.&#160;<a href="sect0018.html#fig:12">12</a>a it would be </p>
+<div class="displaymath" id="a0000000119">
+  \[  C = \log 4 - \log 2 = \log 2.  \]
+</div>
+<p> This could be achieved by using only the 1st and 3d symbols. In Fig.&#160;<a href="sect0018.html#fig:12">12</a>b </p>
+<div class="displaymath" id="a0000000120">
+  \begin{align*}  C & = \log 4 - \tfrac 23 \log 3 - \tfrac 13 \log 6 \\ & = \log 4 - \log 3 - \tfrac 13 \log 2 \\ & = \log \tfrac 13 2^{\frac53}. \end{align*}
+</div>
+<p> In Fig.&#160;<a href="sect0018.html#fig:12">12</a>c we have </p>
+<div class="displaymath" id="a0000000121">
+  \begin{align*}  C & = \log 3 - \tfrac 12 \log 2 - \tfrac 13 \log 3 - \tfrac 16 \log 6 \\ & = \log \frac{3}{2^{\frac12} 3^{\frac13} 6^{\frac16}}. \end{align*}
+</div>
+<p>Suppose the symbols fall into several groups such that the noise never causes a symbol in one group to be mistaken for a symbol in another group. Let the capacity for the \(n\)th group be \(C_n\) (in bits per second) when we use only the symbols in this group. Then it is easily shown that, for best use of the entire set, the total probability \(P_n\) of all symbols in the \(n\)th group should be </p>
+<div class="displaymath" id="a0000000122">
+  \[  P_n = \frac{2^{C_n}}{\sum 2^{C_n}}.  \]
+</div>
+<p> Within a group the probability is distributed just as it would be if these were the only symbols being used. The channel capacity is </p>
+<div class="displaymath" id="a0000000123">
+  \[  C = \log \sum 2^{C_n}.  \]
+</div>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0017.html" title="Example of a Discrete Channel and its Capacity"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0012.html" title="The Discrete Channel with Noise"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0019.html" title="An Example of Efficient Coding"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

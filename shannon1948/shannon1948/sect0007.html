@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: Choice, Uncertainty and Entropy</title>
+<link rel="next" href="sect0008.html" title="The Entropy of an Information Source" />
+<link rel="prev" href="sect0006.html" title="Ergodic and Mixed Sources" />
+<link rel="up" href="sect0002.html" title="Discrete Noiseless Systems" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class=" active">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000008">6 Choice, Uncertainty and Entropy</h1>
+<p>We have represented a discrete information source as a Markoff process. Can we define a quantity which will measure, in some sense, how much information is “produced” by such a process, or better, at what rate information is produced? </p>
+<p>Suppose we have a set of possible events whose probabilities of occurrence are \(p_1,p_2,\dots ,p_n\). These probabilities are known but that is all we know concerning which event will occur. Can we find a measure of how much “choice” is involved in the selection of the event or of how uncertain we are of the outcome? </p>
+<p>If there is such a measure, say \(H(p_1,p_2,\dots ,p_n)\), it is reasonable to require of it the following properties: </p>
+<ol class="enumerate">
+  <li><p> \(H\) should be continuous in the \(p_i\). </p>
+</li>
+  <li><p> If all the \(p_i\) are equal, \(p_i = \frac1n\), then \(H\) should be a monotonic increasing function of \(n\). With equally likely events there is more choice, or uncertainty, when there are more possible events. </p>
+</li>
+  <li><p> If a choice be broken down into two successive choices, the original \(H\) should be the weighted sum of the individual values of \(H\). The meaning of this is illustrated in Fig.&#160;<a href="sect0007.html#fig:6">6</a>. </p>
+<figure id="fig:6">
+  <p> <div class="centered"></div> </p>
+<figcaption>
+  <span class="caption_title">Fig.</span> 
+  <span class="caption_ref">6</span> 
+  <span class="caption_text">Decomposition of a choice from three possibilities.</span> 
+</figcaption>
+
+
+</figure>
+<p> At the left we have three possibilities \(p_1 = \frac12\), \(p_2 = \frac13\), \(p_3 = \frac16\). On the right we first choose between two possibilities each with probability \(\frac12\), and if the second occurs make another choice with probabilities \(\frac23\), \(\frac13\). The final results have the same probabilities as before. We require, in this special case, that </p>
+<div class="displaymath" id="a0000000045">
+  \[  H(\tfrac 12,\tfrac 13,\tfrac 16)=H(\tfrac 12,\tfrac 12) +\tfrac 12 H(\tfrac 23,\tfrac 13).  \]
+</div>
+<p> The coefficient \(\frac12\) is because this second choice only occurs half the time. </p>
+</li>
+</ol>
+<p>In Appendix&#160;<a href="ap-2.html">B</a>, the following result is established: </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:2">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">2</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> The only \(H\) satisfying the three above assumptions is of the form: </p>
+<div class="displaymath" id="a0000000046">
+  \[  H = - K \sum _{i=1}^n p_i \log p_i  \]
+</div>
+<p> where \(K\) is a positive constant. </p>
+
+  </div>
+</div>
+<p>This theorem, and the assumptions required for its proof, are in no way necessary for the present theory. It is given chiefly to lend a certain plausibility to some of our later definitions. The real justification of these definitions, however, will reside in their implications. </p>
+<p>Quantities of the form \(H\!  =\!  -\!  \sum p_i \log p_i\) (the constant \(K\) merely amounts to a choice of a unit of measure) play a central role in information theory as measures of information, choice and uncertainty. The form of \(H\) will be recognized as that of entropy as defined in certain formulations of statistical mechanics<a class="footnote" href="#a0000000047">
+  <sup class="footnotemark">1</sup>
+</a> where \(p_i\) is the probability of a system being in cell \(i\) of its phase space. \(H\) is then, for example, the \(H\) in Boltzmann’s famous \(H\) theorem. We shall call \(H = - \sum p_i \log p_i\) the entropy of the set of probabilities \(p_1,\dots ,p_n\). If \(x\) is a chance variable we will write \(H(x)\) for its entropy; thus \(x\) is not an argument of a function but a label for a number, to differentiate it from \(H(y)\) say, the entropy of the chance variable \(y\). </p>
+<p>The entropy in the case of two possibilities with probabilities \(p\) and \(q= 1-p\), namely </p>
+<div class="displaymath" id="a0000000048">
+  \[  H = - (p \log p + q \log q)  \]
+</div>
+<p> is plotted in Fig.&#160;<a href="sect0007.html#fig:7">7</a> as a function of \(p\). </p>
+<figure id="fig:7">
+  <p> <div class="centered"></div> </p>
+<figcaption>
+  <span class="caption_title">Fig.</span> 
+  <span class="caption_ref">7</span> 
+  <span class="caption_text">Entropy in the case of two possibilities with probabilities \(p\) and \((1-p)\).</span> 
+</figcaption>
+
+
+</figure>
+<p>The quantity \(H\) has a number of interesting properties which further substantiate it as a reasonable measure of choice or information. </p>
+<p>1. \(H=0\) if and only if all the \(p_i\) but one are zero, this one having the value unity. Thus only when we are certain of the outcome does \(H\) vanish. Otherwise \(H\) is positive. </p>
+<p>2. For a given \(n\), \(H\) is a maximum and equal to \(\log n\) when all the \(p_i\) are equal (i.e., \(\frac1n\)). This is also intuitively the most uncertain situation. </p>
+<p>3. Suppose there are two events, \(x\) and \(y\), in question with \(m\) possibilities for the first and \(n\) for the second. Let \(p(i,j)\) be the probability of the joint occurrence of \(i\) for the first and \(j\) for the second. The entropy of the joint event is </p>
+<div class="displaymath" id="a0000000049">
+  \[  H(x,y) = - \sum _{i,j} p(i,j) \log p(i,j)  \]
+</div>
+<p> while </p>
+<div class="displaymath" id="a0000000050">
+  \begin{align*}  H(x) & = - \sum _{i,j} p(i,j) \log \sum _j p(i,j) \\ H(y) & = - \sum _{i,j} p(i,j) \log \sum _i p(i,j). \end{align*}
+</div>
+<p> It is easily shown that </p>
+<div class="displaymath" id="a0000000051">
+  \[  H(x,y) \le H(x) + H(y)  \]
+</div>
+<p> with equality only if the events are independent (i.e., \(p(i,j) = p(i) p(j)\)). The uncertainty of a joint event is less than or equal to the sum of the individual uncertainties. </p>
+<p>4. Any change toward equalization of the probabilities \(p_1,p_2,\dots , p_n\) increases \(H\). Thus if \(p_1 {\lt} p_2\) and we increase \(p_1\), decreasing \(p_2\) an equal amount so that \(p_1\) and \(p_2\) are more nearly equal, then \(H\) increases. More generally, if we perform any “averaging” operation on the \(p_i\) of the form </p>
+<div class="displaymath" id="a0000000052">
+  \[  p'_i = \sum _j a_{ij} p_j  \]
+</div>
+<p> where \(\sum _i a_{ij} = \sum _j a_{ij}=1\), and all \(a_{ij} \ge 0\), then \(H\) increases (except in the special case where this transformation amounts to no more than a permutation of the \(p_j\) with \(H\) of course remaining the same). </p>
+<p>5. Suppose there are two chance events \(x\) and \(y\) as in 3, not necessarily independent. For any particular value \(i\) that \(x\) can assume there is a conditional probability \(p_i(j)\) that \(y\) has the value \(j\). This is given by </p>
+<div class="displaymath" id="a0000000053">
+  \[  p_i(j)=\frac{p(i,j)}{\sum _j p(i,j)}.  \]
+</div>
+<p> We define the <em>conditional entropy</em> of \(y\), \(H_x(y)\) as the average of the entropy of \(y\) for each value of \(x\), weighted according to the probability of getting that particular \(x\). That is </p>
+<div class="displaymath" id="a0000000054">
+  \[  H_x(y) = - \sum _{i,j} p(i,j) \log p_i(j) \,  .  \]
+</div>
+<p> This quantity measures how uncertain we are of \(y\) on the average when we know \(x\). Substituting the value of \(p_i (j)\) we obtain </p>
+<div class="displaymath" id="a0000000055">
+  \begin{align*}  H_x(y) & = - \sum _{i,j} p(i,j) \log p(i,j) + \sum _{i,j} p(i,j) \log \sum _j p(i,j) \\ & = H(x,y) - H(x) \end{align*}
+</div>
+<p> or </p>
+<div class="displaymath" id="a0000000056">
+  \[  H(x,y) = H(x) + H_x (y).  \]
+</div>
+<p> The uncertainty (or entropy) of the joint event \(x,y\) is the uncertainty of \(x\) plus the uncertainty of \(y\) when \(x\) is known. </p>
+<p>6. From 3 and 5 we have </p>
+<div class="displaymath" id="a0000000057">
+  \[  H(x) + H(y) \ge H(x,y) = H(x) + H_x(y).  \]
+</div>
+<p> Hence </p>
+<div class="displaymath" id="a0000000058">
+  \[  H(y) \ge H_x (y).  \]
+</div>
+<p> The uncertainty of \(y\) is never increased by knowledge of \(x\). It will be decreased unless \(x\) and \(y\) are independent events, in which case it is not changed. </p>
+
+</div> <!--main-text -->
+<footer id="footnotes">
+<ol>
+  <li id="a0000000047">See, for example, R. C. Tolman, <i class="it">Principles of Statistical Mechanics,</i> Oxford, Clarendon, 1938.</li>
+</ol>
+</footer>
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0006.html" title="Ergodic and Mixed Sources"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0002.html" title="Discrete Noiseless Systems"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0008.html" title="The Entropy of an Information Source"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

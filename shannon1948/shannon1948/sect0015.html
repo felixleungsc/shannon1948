@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Mathematical Theory of Communication: The Fundamental Theorem for a Discrete Channel with Noise</title>
+<link rel="next" href="sect0016.html" title="Discussion" />
+<link rel="prev" href="sect0014.html" title="Equivocation and Channel Capacity" />
+<link rel="up" href="sect0012.html" title="The Discrete Channel with Noise" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">A Mathematical Theory of Communication</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">1</span> <span class="toc_entry">Discrete Noiseless Systems</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sec-1.html"><span class="toc_ref">1</span> <span class="toc_entry">The Discrete Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Source of Information</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">3</span> <span class="toc_entry">The Series of Approximations to English</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">4</span> <span class="toc_entry">Graphical Representation of a Markoff Process</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref">5</span> <span class="toc_entry">Ergodic and Mixed Sources</span></a>
+ </li>
+<li class="">
+  <a href="sect0007.html"><span class="toc_ref">6</span> <span class="toc_entry">Choice, Uncertainty and Entropy</span></a>
+ </li>
+<li class="">
+  <a href="sect0008.html"><span class="toc_ref">7</span> <span class="toc_entry">The Entropy of an Information Source</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref">8</span> <span class="toc_entry">Representation of the Encoding and Decoding Operations</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref">9</span> <span class="toc_entry">The Fundamental Theorem for a Noiseless Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0011.html"><span class="toc_ref">10</span> <span class="toc_entry">Discussion and Examples</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active">
+  <a href="sect0012.html"><span class="toc_ref">2</span> <span class="toc_entry">The Discrete Channel with Noise</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0013.html"><span class="toc_ref">11</span> <span class="toc_entry">Representation of a Noisy Discrete Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref">12</span> <span class="toc_entry">Equivocation and Channel Capacity</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0015.html"><span class="toc_ref">13</span> <span class="toc_entry">The Fundamental Theorem for a Discrete Channel with Noise</span></a>
+ </li>
+<li class="">
+  <a href="sect0016.html"><span class="toc_ref">14</span> <span class="toc_entry">Discussion</span></a>
+ </li>
+<li class="">
+  <a href="sect0017.html"><span class="toc_ref">15</span> <span class="toc_entry">Example of a Discrete Channel and its Capacity</span></a>
+ </li>
+<li class="">
+  <a href="sect0018.html"><span class="toc_ref">16</span> <span class="toc_entry">The Channel Capacity in Certain Special Cases</span></a>
+ </li>
+<li class="">
+  <a href="sect0019.html"><span class="toc_ref">17</span> <span class="toc_entry">An Example of Efficient Coding</span></a>
+ </li>
+<li class="">
+  <a href="ap-1.html"><span class="toc_ref">A</span> <span class="toc_entry">The Growth of the Number of Blocks of Symbols with a Finite State Condition</span></a>
+ </li>
+<li class="">
+  <a href="ap-2.html"><span class="toc_ref">B</span> <span class="toc_entry">Derivation of \(H=-\sum p_i\log p_i\)</span></a>
+ </li>
+<li class="">
+  <a href="ap-3.html"><span class="toc_ref">C</span> <span class="toc_entry">Theorems on Ergodic Sources</span></a>
+ </li>
+<li class="">
+  <a href="ap-4.html"><span class="toc_ref">D</span> <span class="toc_entry">Maximizing the Rate for a System of Constraints</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class="">
+  <a href="sect0020.html"><span class="toc_ref">3</span> <span class="toc_entry">Mathematical Preliminaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0021.html"><span class="toc_ref">4</span> <span class="toc_entry">The Continuous Channel</span></a>
+ </li>
+<li class="">
+  <a href="sect0022.html"><span class="toc_ref">5</span> <span class="toc_entry">The Rate for a Continuous Source</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000016">13 The Fundamental Theorem for a Discrete Channel with Noise</h1>
+<p>It may seem surprising that we should define a definite capacity \(C\) for a noisy channel since we can never send certain information in such a case. It is clear, however, that by sending the information in a redundant form the probability of errors can be reduced. For example, by repeating the message many times and by a statistical study of the different received versions of the message the probability of errors could be made very small. One would expect, however, that to make this probability of errors approach zero, the redundancy of the encoding must increase indefinitely, and the rate of transmission therefore approach zero. This is by no means true. If it were, there would not be a very well defined capacity, but only a capacity for a given frequency of errors, or a given equivocation; the capacity going down as the error requirements are made more stringent. Actually the capacity \(C\) defined above has a very definite significance. It is possible to send information at the rate \(C\) through the channel <em>with as small a frequency of errors or equivocation as desired</em> by proper encoding. This statement is not true for any rate greater than \(C\). If an attempt is made to transmit at a higher rate than \(C\), say \(C+R_1\), then there will necessarily be an equivocation equal to or greater than the excess \(R_1\). Nature takes payment by requiring just that much uncertainty, so that we are not actually getting any more than \(C\) through correctly. </p>
+<p>The situation is indicated in Fig.&#160;<a href="sect0015.html#fig:9">9</a>. The rate of information into the channel is plotted horizontally and the equivocation vertically. Any point above the heavy line in the shaded region can be attained and those below cannot. The points on the line cannot in general be attained, but there will usually be two points on the line that can. </p>
+<p>These results are the main justification for the definition of \(C\) and will now be proved. </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="thm:11">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">11</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> Let a discrete channel have the capacity \(C\) and a discrete source the entropy per second \(H\). If \(H \le C\) there exists a coding system such that the output of the source can be transmitted over the channel with an arbitrarily small frequency of errors (or an arbitrarily small equivocation). If \(H{\gt}C\) it is possible to encode the source so that the equivocation is less than \(H-C+\epsilon \) where \(\epsilon \) is arbitrarily small. There is no method of encoding which gives an equivocation less than \(H-C\). </p>
+
+  </div>
+</div>
+<p>The method of proving the first part of this theorem is not by exhibiting a coding method having the desired properties, but by showing that such a code must exist in a certain group of codes. </p>
+<figure id="fig:9">
+  <p> <div class="centered"></div> </p>
+<figcaption>
+  <span class="caption_title">Fig.</span> 
+  <span class="caption_ref">9</span> 
+  <span class="caption_text">The equivocation possible for a given input entropy to a channel.</span> 
+</figcaption>
+
+
+</figure>
+<p> In fact we will average the frequency of errors over this group and show that this average can be made less than \(\epsilon \). If the average of a set of numbers is less than \(\epsilon \) there must exist at least one in the set which is less than \(\epsilon \). This will establish the desired result. </p>
+<p>The capacity \(C\) of a noisy channel has been defined as </p>
+<div class="displaymath" id="a0000000100">
+  \[  C= \qopname \relax \@empty {Max}\bigl(H(x) - H_y(x)\bigr)  \]
+</div>
+<p> where \(x\) is the input and \(y\) the output. The maximization is over all sources which might be used as input to the channel. </p>
+<p>Let \(S_0\) be a source which achieves the maximum capacity \(C\). If this maximum is not actually achieved by any source let \(S_0\) be a source which approximates to giving the maximum rate. Suppose \(S_0\) is used as input to the channel. We consider the possible transmitted and received sequences of a long duration \(T\). The following will be true: </p>
+<p>1. The transmitted sequences fall into two classes, a high probability group with about \(2^{T H(x)}\) members and the remaining sequences of small total probability. </p>
+<p>2. Similarly the received sequences have a high probability set of about \(2^{T H(y)}\) members and a low probability set of remaining sequences. </p>
+<p>3. Each high probability output could be produced by about \(2^{T H_y(x)}\) inputs. The probability of all other cases has a small total probability. </p>
+<p>All the \(\epsilon \)’s and \(\delta \)’s implied by the words “small” and “about” in these statements approach zero as we allow \(T\) to increase and \(S_0\) to approach the maximizing source. </p>
+<p>The situation is summarized in Fig.&#160;<a href="sect0015.html#fig:10">10</a> where the input sequences are points on the left and output sequences points on the right. The fan of cross lines represents the range of possible causes for a typical output. </p>
+<figure id="fig:10">
+  <p> <div class="centered"></div> </p>
+<figcaption>
+  <span class="caption_title">Fig.</span> 
+  <span class="caption_ref">10</span> 
+  <span class="caption_text">Schematic representation of the relations between inputs and outputs in a channel.</span> 
+</figcaption>
+
+
+</figure>
+<p>Now suppose we have another source producing information at rate \(R\) with \(R{\lt}C\). In the period \(T\) this source will have \(2^{T R}\) high probability messages. We wish to associate these with a selection of the possible channel inputs in such a way as to get a small frequency of errors. We will set up this association in all possible ways (using, however, only the high probability group of inputs as determined by the source \(S_0\)) and average the frequency of errors for this large class of possible coding systems. This is the same as calculating the frequency of errors for a random association of the messages and channel inputs of duration \(T\). Suppose a particular output \(y_1\) is observed. What is the probability of more than one message in the set of possible causes of \(y_1\)? There are \(2^{T R}\) messages distributed at random in \(2^{TH(x)}\) points. The probability of a particular point being a message is thus </p>
+<div class="displaymath" id="a0000000101">
+  \[  2^{T(R-H(x))}.  \]
+</div>
+<p> The probability that none of the points in the fan is a message (apart from the actual originating message) is </p>
+<div class="displaymath" id="a0000000102">
+  \[  P = \bigl[1 - 2^{T(R-H(x))}\bigr]^{2^{T H_y(x)}}.  \]
+</div>
+<p> Now \(R {\lt} H(x) - H_y(x)\) so \(R - H(x) = - H_y(x) - \eta \) with \(\eta \) positive. Consequently </p>
+<div class="displaymath" id="a0000000103">
+  \[  P = \bigl[ 1 - 2^{-T H_y(x) - T\eta } \bigr]^{2^{T H_y(x)}}  \]
+</div>
+<p> approaches (as \(T\to \infty \)) </p>
+<div class="displaymath" id="a0000000104">
+  \[  1-2^{-T \eta }.  \]
+</div>
+<p> Hence the probability of an error approaches zero and the first part of the theorem is proved. </p>
+<p>The second part of the theorem is easily shown by noting that we could merely send \(C\) bits per second from the source, completely neglecting the remainder of the information generated. At the receiver the neglected part gives an equivocation \(H(x)-C\) and the part transmitted need only add \(\epsilon \). This limit can also be attained in many other ways, as will be shown when we consider the continuous case. </p>
+<p>The last statement of the theorem is a simple consequence of our definition of \(C\). Suppose we can encode a source with \(H(x) = C+ a\) in such a way as to obtain an equivocation \(H_y(x) = a - \epsilon \) with \(\epsilon \) positive. Then \(R=H(x)=C+a\) and </p>
+<div class="displaymath" id="a0000000105">
+  \[  H(x) - H_y(x) = C+\epsilon  \]
+</div>
+<p> with \(\epsilon \) positive. This contradicts the definition of \(C\) as the maximum of \(H(x) - H_y(x)\). </p>
+<p>Actually more has been proved than was stated in the theorem. If the average of a set of numbers is within \(\epsilon \) of of their maximum, a fraction of at most \(\sqrt{\epsilon }\) can be more than \(\sqrt{\epsilon }\) below the maximum. Since \(\epsilon \) is arbitrarily small we can say that almost all the systems are arbitrarily close to the ideal. </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0014.html" title="Equivocation and Channel Capacity"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0012.html" title="The Discrete Channel with Noise"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0016.html" title="Discussion"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

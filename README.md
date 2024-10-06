@@ -1,14 +1,8 @@
-# Dependencies
+# Shannon's 1948 paper in html
 
-## pandoc-math
 
-- pandoc: `nix-shell -p pandoc`
-- pandoc-math: `pip install pandoc-math`
 
-See https://github.com/GavinMcWhinnie/pandoc-math.
+The LaTeX files for Shannon's 1948 paper are from https://9p.io/cm/ms/what/shannonday/shannon1948.tar.gz.
 
-## plasTex
-
-- plasTeX: `pip install plasTeX`
-
+Install plasTeX with `pip install plasTeX`.
 See https://plastex.github.io/plastex/.
