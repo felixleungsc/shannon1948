@@ -1,6 +1,9 @@
-# Shannon's 1948 paper in html
+The LaTeX files were copied from https://9p.io/cm/ms/what/shannonday/shannon1948.tar.gz, then converted to html using [plasTeX](https://plastex.github.io/plastex/) with:
 
-The LaTeX files for Shannon's 1948 paper are from https://9p.io/cm/ms/what/shannonday/shannon1948.tar.gz.
+```
+cd shannon1948
+plastex shannon1948.tex
+mv shannon1948/shannon1948 docs
+```
 
-Install plasTeX with `pip install plasTeX`.
-See https://plastex.github.io/plastex/.
+_(Work in progress; figures are missing; some equations are not rendered properly)_

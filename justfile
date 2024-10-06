@@ -8,10 +8,6 @@ download:
     curl -O https://9p.io/cm/ms/what/shannonday/shannon1948.tar.gz
     tar -zxvf shannon1948.tar.gz
 
-# Using pandoc-math
-pandoc-math:
-    cd shannon1948; pandoc-math shannon1948.tex
-
-# Using plasTex
-plastex:
-    cd shannon1948; plastex shannon1948.tex
+# Convert
+convert:
+    cd shannon1948; plastex shannon1948.tex; mv shannon1948/shannon1948 docs
